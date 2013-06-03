@@ -1,0 +1,11 @@
+{
+  "description": "Replaces the Accessibility icon with an eye looking at your mouse.", 
+  "name": "Eye!", 
+  "shell-version": [
+    "3.4", 
+    "3.6"
+  ], 
+  "url": "https://github.com/Obsidien/Eye", 
+  "uuid": "eye@obsidien.github.com", 
+  "version": 2
+}
