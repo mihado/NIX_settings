@@ -1,0 +1,10 @@
+alias clr='clear'
+
+alias ls='ls -F --color=auto'
+alias l='ls'
+alias la='ls -A'
+alias ll='la -l'
+
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ..3='cd ../../../'

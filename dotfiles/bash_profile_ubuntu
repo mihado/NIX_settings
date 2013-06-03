@@ -1,0 +1,18 @@
+source ~/.bashrc
+source ~/.profile
+
+#if [ -f /etc/bash_completion ]; then
+#     . /etc/bash_completion 
+#fi
+
+#### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Add vagrant
+#export PATH="/opt/vagrant/bin:$PATH"
+
+### Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+### Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin

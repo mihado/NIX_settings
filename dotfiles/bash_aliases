@@ -1,0 +1,81 @@
+# grep .bash_aliases
+alias cbag='cat ~/.bash_aliases | grep '
+
+# sublime-text-2 as in Linux command subl"
+alias subl='sublime'
+
+# !=== Script ===
+alias rby='ruby'
+alias cfe='coffee'
+alias py='python'
+alias reg='regetron'
+
+# some more ls aliases
+alias ls='ls -CF'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ..3='cd ../../../'
+
+alias clr='clear'
+
+# !=== GIT ===
+alias gst='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gcmm='git commit -m'
+alias gca='git commit -a'
+alias gph='git push'
+alias gpl='git pull'
+alias gb='git branch'
+alias gco='git checkout'
+alias gcm='git checkout master'
+alias gcp='git checkout production'
+alias gfg='git fetch github'
+alias gfb='git fetch bucket'
+
+# !=== GEMS ===
+alias ccb='cucumber'
+alias rsp='rspec'
+alias shotgun47='shotgun --port=4567'
+
+# !=== ZEUS ===
+alias zzs='zeus start'
+alias ztr='zeus test'
+alias ztc='zeus cucumber'
+alias zs='zeus server'
+alias zc='zeus console'
+alias zr='zeus rake'
+alias zd='zeus destroy'
+alias zg='zeus generate'
+
+# !=== RAILS ===
+alias rn='rails new'
+alias rc='rails console'
+alias rcb='rails console --sandbox'
+alias rs='rails server'
+alias rg='rails generate'
+alias rd='rails destroy'
+
+alias renv='RAILS_ENV'
+
+alias bx='bundle exec'
+alias bxan='bundle exec annotate'
+alias bxr='bundle exec rspec'
+alias bxc='bundle exec cucumber'
+
+# !=== RAKE ===
+alias rdl='rake db:schema:load'
+alias rdrs='rake db:reset'
+alias rds='rake db:seed'
+alias rddrop='rake db:drop'
+
+alias bxdl='bundle exec rake db:schema:load; bundle exec rake db:schema:load RAILS_ENV=test'
+alias bxdm='bundle exec rake db:migrate; bundle exec rake db:migrate RAILS_ENV=test'
+alias bxdr='bundle exec rake db:migrate:redo; bundle exec rake db:migrate:redo RAILS_ENV=test'
+alias bxdrb='bundle exec rake db:rollback'
+alias bxdrs='bundle exec rake db:reset'
+alias bxdpp='bundle exec rake db:populate; bundle exec rake db:test:prepare'
