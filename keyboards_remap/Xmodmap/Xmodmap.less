@@ -1,0 +1,38 @@
+!keycode  66 = Caps_Lock NoSymbol Caps_Lock
+
+!#Print Key Tweak
+!Original
+	!keycode 107 = Print Sys_Req Print Sys_Req
+!Map PrintScreen as Super_Key
+	!keycode 107 = Super_R NoSymbol Super_R
+!Disable Print
+	!(Gnome 3.4)
+	!Need to disable the command_sreenshot of gnome in gconf apps/metacity/global_keybindings
+	!(Gnome 3.6)
+	!org.gnome.settings-daemon.plugins.media-keys
+
+!# Disable capslock
+!remove Lock = Caps_Lock
+!or just comment out the original keycode 66
+!http://blacketernal.wordpress.com/set-up-key-mappings-with-xmodmap/
+!http://larsmichelsen.com/open-source/german-umlauts-on-us-keyboard-in-x-ubuntu-10-04/
+
+!Map umlauts to CapsLock + <key>
+keycode 66 = Mode_switch
+keysym e = e E EuroSign
+keysym c = c C cent
+keysym a = a A adiaeresis Adiaeresis
+keysym o = o O odiaeresis Odiaeresis
+keysym u = u U udiaeresis Udiaeresis
+keysym s = s S ssharp
+
+!xmodmap:  up to 4 keys per modifier, (keycodes in parentheses):
+
+!shift       Shift_L (0x32),  Shift_R (0x3e)
+!lock        Caps_Lock (0x42)
+!control     Control_L (0x25),  Control_R (0x69)
+!mod1        Alt_L (0x40),  Alt_R (0x6c),  Meta_L (0xcd)
+!mod2        Num_Lock (0x4d)
+!mod3      
+!mod4        Super_L (0x85),  Super_R (0x86),  Super_L (0xce),  Hyper_L (0xcf)
+!mod5        ISO_Level3_Shift (0x5c),  Mode_switch (0xcb)

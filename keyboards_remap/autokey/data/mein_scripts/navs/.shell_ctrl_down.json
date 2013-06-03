@@ -1,0 +1,29 @@
+{
+    "usageCount": 9, 
+    "omitTrigger": false, 
+    "prompt": false, 
+    "description": "shell_ctrl_down", 
+    "abbreviation": {
+        "wordChars": "[\\w]", 
+        "abbreviations": [], 
+        "immediate": false, 
+        "ignoreCase": false, 
+        "backspace": true, 
+        "triggerInside": false
+    }, 
+    "hotkey": {
+        "hotKey": "k", 
+        "modifiers": [
+            "<alt>", 
+            "<ctrl>"
+        ]
+    }, 
+    "modes": [], 
+    "showInTrayMenu": false, 
+    "filter": {
+        "regex": null, 
+        "isRecursive": false
+    }, 
+    "type": "script", 
+    "store": {}
+}

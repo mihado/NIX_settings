@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>Tweaks</name>
+		<item>
+			<name>Disable COMMAND Q</name>
+			<identifier>private.disable_command_q</identifier>
+			<autogen> --KeyToKey--
+				KeyCode::Q, ModifierFlag::COMMAND_L, KeyCode::VK_NONE
+			</autogen>
+		</item>
+	</item>
+
+	<!-- Navigations -->
+	<item>
+		<name>COMMAND Navigations</name>
+		<item>
+			<name>CMD i,l,k,j as up,right,down,left</name>
+			<identifier>private.cmd_navigations</identifier>
+	    
+	    <!-- Up/Down -->
+	    <autogen> --KeyToKey-- 
+		    KeyCode::I, ModifierFlag::COMMAND_L, KeyCode::CURSOR_UP
+			</autogen>
+			<autogen> --KeyToKey-- 
+		    KeyCode::K, ModifierFlag::COMMAND_L, KeyCode::CURSOR_DOWN
+			</autogen>
+
+			<!-- Seems like Ctrl-Option-Shift-Arrows doesnn't work in Libre Office (original Control-Shift-Arrows also don't work)-->
+
+			<!-- Right -->
+			<autogen> --KeyToKey-- 
+			  KeyCode::L, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L, KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen> --KeyToKey-- 
+			  KeyCode::L, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
+			</autogen>
+			<autogen> --KeyToKey-- 
+			  KeyCode::L, ModifierFlag::COMMAND_L, KeyCode::CURSOR_RIGHT
+			</autogen>
+
+			<!-- Left -->
+			<autogen> --KeyToKey-- 
+			  KeyCode::J, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L, KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen> --KeyToKey-- 
+			  KeyCode::J, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L
+			</autogen>
+			<autogen> --KeyToKey-- 
+			  KeyCode::J, ModifierFlag::COMMAND_L, KeyCode::CURSOR_LEFT
+			</autogen>
+		</item>
+
+		<item>
+			<name>CMD u,o as PgUP, PgDOWN</name>
+			<identifier>private.cmd_pgup_pgdown</identifier>
+  		<autogen> --KeyToKey-- 
+		    KeyCode::U, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L, KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+			</autogen>
+  		<autogen> --KeyToKey-- 
+		    KeyCode::U, ModifierFlag::COMMAND_L, KeyCode::PAGEUP
+			</autogen>
+			<autogen> --KeyToKey-- 
+			    KeyCode::O, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L, KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+			</autogen>
+			<autogen> --KeyToKey-- 
+			    KeyCode::O, ModifierFlag::COMMAND_L, KeyCode::PAGEDOWN
+			</autogen>
+		</item>
+		
+		<item>
+			<name>CMD n,m as moveToBeginning/EndOfLine</name>
+			<identifier>private.beginning_end_of_line</identifier>
+			<autogen> --KeyToKey-- 
+			  KeyCode::N, ModifierFlag::COMMAND_L, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+			</autogen>
+			<autogen> --KeyToKey-- 
+			  KeyCode::M, ModifierFlag::COMMAND_L, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+			</autogen>
+		</item>
+	</item>
+	<!-- Navigations ++ -->
+
+  <!-- CMD to CONTROL -->
+	<item>
+		<name>Remap some COMMAND to CONTROL</name>
+		<item>
+		  <name>Keep CONTROL O to Terminal Default</name>
+		  <only>TERMINAL</only>
+		  <identifier>private.control_o_normal</identifier>
+		  <autogen> --KeyToKey-- 
+		  	KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::O, ModifierFlag::CONTROL_L
+		  </autogen>
+	  </item>
+	  
+	  <item>
+			<name>CONTROL Q Quit</name>
+			<identifier>private.control_q_quit</identifier>
+			<autogen> --KeyToKey--
+				KeyCode::Q, ModifierFlag::CONTROL_L, KeyCode::Q, ModifierFlag::COMMAND_L
+			</autogen>
+		</item>
+		
+		<item>
+		  <name>CONTROL O as CMD O</name>
+		  <identifier>private.control_o_open</identifier>
+		  <autogen> --KeyToKey-- 
+		  	KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::O, ModifierFlag::COMMAND_L 
+		  </autogen>
+	  </item>
+
+	  <item>
+		  <name>CONTROL I as CMD I</name>
+		  <identifier>private.control_i</identifier>
+		  <autogen> --KeyToKey-- 
+		  	KeyCode::I, ModifierFlag::CONTROL_L, KeyCode::I, ModifierFlag::COMMAND_L 
+		  </autogen>
+	  </item>
+  	
+  	<item>
+	    <name>CONTROL N as CMD N</name>
+	    <identifier>private.control_n_new</identifier>
+	    <autogen> --KeyToKey-- 
+		    KeyCode::N, ModifierFlag::CONTROL_L, KeyCode::N, ModifierFlag::COMMAND_L
+			</autogen>
+  	</item>
+  	
+  	<item>
+	    <name>CONTROL U as CMD U</name>
+	    <identifier>private.control_u</identifier>
+	    <autogen> --KeyToKey-- 
+		    KeyCode::U, ModifierFlag::CONTROL_L, KeyCode::U, ModifierFlag::COMMAND_L
+			</autogen>
+  	</item>
+  	
+  	<item>
+	    <name>CONTROL J as CMD J</name>
+	    <identifier>private.control_j</identifier>
+	    <autogen> --KeyToKey-- 
+		    KeyCode::J, ModifierFlag::CONTROL_L, KeyCode::J, ModifierFlag::COMMAND_L
+			</autogen>
+  	</item>
+  	
+  	<item>
+	    <name>CONTROL L as CMD L</name>
+	    <identifier>private.control_l_location</identifier>
+	    <autogen> --KeyToKey-- 
+		    KeyCode::L, ModifierFlag::CONTROL_L, KeyCode::L, ModifierFlag::COMMAND_R
+			</autogen>
+  	</item>
+	</item>
+	<!-- CMD to CONTROL ++ -->
+
+	<item>
+		<name>DELETE</name>
+			<item>
+				<name>Ctrl Delete</name>
+				<identifier>private.control_delete</identifier>
+				<autogen> --KeyToKey--
+					KeyCode::DELETE, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::OPTION_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Forward Delete</name>
+			  <identifier>private.forward_delete</identifier>
+			  <autogen> --KeyToKey-- 
+				  KeyCode::D, ModifierFlag::COMMAND_L, KeyCode::DELETE, ModifierFlag::FN
+				</autogen>
+			</item>
+		
+		<!-- Don't normally use backward delete that much -->
+		<!-- <item>
+			<name>Backward Delete</name>
+		  <identifier>private.backward_delete</identifier>
+		  <autogen> --KeyToKey-- 
+			  KeyCode::H, ModifierFlag::COMMAND_L, KeyCode::H, ModifierFlag::CONTROL_L
+			/autogen>
+		</item> -->
+	</item>
+</root>
