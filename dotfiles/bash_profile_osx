@@ -1,0 +1,16 @@
+source ~/.bashrc
+
+# http://wiki.octave.org/Installing_MacOS_X_Bundle
+# set the default gnuplot terminal
+export GNUTERM=x11
+
+# http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
+# use git installed by homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
+# nodejs - npm
+# export NODE_PATH="/usr/local/share/npm/lib/node-modules"
+# export PATH="/usr/local/share/npm/bin:$PATH"
+
+"$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+

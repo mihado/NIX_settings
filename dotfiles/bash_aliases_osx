@@ -1,3 +1,6 @@
+# jumping
+alias crep='cd ~/Repos'
+
 # grep .bash_aliases
 alias cbag='cat ~/.bash_aliases | grep '
 
