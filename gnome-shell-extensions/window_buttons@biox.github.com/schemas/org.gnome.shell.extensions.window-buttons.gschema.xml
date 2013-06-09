@@ -38,7 +38,7 @@
     
     <key name="pinch" enum="org.gnome.shell.extensions.window-buttons.PinchType">
       <default>'gnome-shell'</default>
-      <summary>Use custom/mutter/metacity order</summary>
+      <summary>Use custom/metacity/gnome-shell order</summary>
       <description>Use custom button order or the pinch order settings from mutter/metacity. Use 'custom' to use the custom button order in the 'order' key, 'metacity' to use metacity's settings (/apps/metacity/general/button_layout), 'gnome-shell' to use GNOME-shell's settings (org.gnome.shell.overrides.button-layout == /desktop/gnome/shell/windows/button_layout).</description>
     </key>
     

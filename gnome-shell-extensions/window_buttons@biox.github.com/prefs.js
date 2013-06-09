@@ -135,9 +135,33 @@ const WindowButtonsPrefsWidget = new GObject.Class({
         }));
         this._themeCombo.set_sensitive(!this._doMetacity.active);
 
+        // pinch
+        item = new Gtk.ComboBoxText();
+        for (let type in PinchType) {
+            if (PinchType.hasOwnProperty(type)) {
+                let label = type[0].toUpperCase() +
+                    type.substring(1).toLowerCase();
+                label = label.replace(/_/g, '-');
+                item.insert(-1, PinchType[type].toString(), label);
+            }
+        }
+        item.set_active_id(this._settings.get_enum(WA_PINCH).toString());
+        item.connect('changed', Lang.bind(this, function (combo) {
+            let value = parseInt(combo.get_active_id(), 10);
+            if (value !== undefined &&
+                this._settings.get_enum(WA_PINCH) !== value) {
+                this._settings.set_enum(WA_PINCH, value);
+            }
+            this._order.set_sensitive(value === PinchType.CUSTOM);
+        }));
+        this.addRow("Which button order to use:", item);
+
         // order
         this._order = this.addEntry("Button order:\n(allowed: {'minimize', " +
                 "'maximize', 'close', ':'})", WA_ORDER);
+        this._order.set_sensitive(
+                this._settings.get_enum(WA_PINCH) === PinchType.CUSTOM
+        );
         /* insert controls for moving buttons */
         this._positionLeft = this._makeLeftRightButtons(
                 "Position the left set of buttons", WA_LEFTBOX, WA_LEFTPOS);
@@ -156,26 +180,6 @@ const WindowButtonsPrefsWidget = new GObject.Class({
                 this._positionRight.set_sensitive(lr[1].length);
             }
         }));
-
-        // pinch
-        item = new Gtk.ComboBoxText();
-        for (let type in PinchType) {
-            if (PinchType.hasOwnProperty(type)) {
-                let label = type[0].toUpperCase() +
-                    type.substring(1).toLowerCase();
-                label = label.replace(/_/g, '-');
-                item.insert(-1, PinchType[type].toString(), label);
-            }
-        }
-        item.set_active_id(this._settings.get_enum(WA_PINCH).toString());
-        item.connect('changed', Lang.bind(this, function (combo) {
-            let value = parseInt(combo.get_active_id(), 10);
-            if (value !== undefined &&
-                this._settings.get_enum(WA_PINCH) !== value) {
-                this._settings.set_enum(WA_PINCH, value);
-            }
-        }));
-        this.addRow("Which button order to use:", item);
 
         // hide in overview?
         this.addBoolean("Hide buttons in the overview?", WA_HIDEINOVERVIEW);

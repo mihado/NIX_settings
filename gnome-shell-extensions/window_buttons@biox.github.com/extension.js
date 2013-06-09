@@ -345,7 +345,8 @@ WindowButtons.prototype = {
             // show iff *any* window is (fully) maximized
             case ShowButtonsWhen.ANY_WINDOW_MAXIMIZED:
                 for (let i = 0; i < windows.length; ++i) {
-                    if (windows[i].get_maximized() === Meta.MaximizeFlags.BOTH) {
+                    if (windows[i].get_maximized() === Meta.MaximizeFlags.BOTH &&
+                            !windows[i].minimized) {
                         show = true;
                         break;
                     }
@@ -366,18 +367,24 @@ WindowButtons.prototype = {
             }
         }
 
-        // if the actors already match `show` don't do anything.
-        if (show === this.leftActor.visible &&
-                show === this.rightActor.visible) {
-            return false;
+        var showLeft = show && (this.leftBox.get_children().length > 0);
+        if (showLeft !== this.leftActor.visible) {
+            if (showLeft) {
+                this.leftActor.show();
+            } else {
+                this.leftActor.hide();
+            }
         }
-        if (show) {
-            this.leftActor.show();
-            this.rightActor.show();
-        } else {
-            this.leftActor.hide();
-            this.rightActor.hide();
+
+        var showRight = show && (this.rightBox.get_children().length > 0);
+        if (showRight !== this.rightActor.visible) {
+            if (showRight) {
+                this.rightActor.show();
+            } else {
+                this.rightActor.hide();
+            }
         }
+
         return false;
     },
 
@@ -620,6 +627,7 @@ WindowButtons.prototype = {
 
     enable: function () {
         this._settings = Convenience.getSettings();
+        this._settingsSignals = [];
         this._locked = false;
         //Create boxes for the buttons
         this.rightActor = new St.Bin({ style_class: 'box-bin'});
@@ -637,36 +645,46 @@ WindowButtons.prototype = {
         this._loadTheme();
 
         //Connect to setting change events
-        this._settings.connect('changed::' + WA_DO_METACITY,
-                Lang.bind(this, this._loadTheme));
-        this._settings.connect('changed::' + WA_THEME,
-                Lang.bind(this, this._loadTheme));
-        this._settings.connect('changed::' + WA_ORDER,
-                Lang.bind(this, this._display));
-        this._settings.connect('changed::' + WA_PINCH,
-                Lang.bind(this, this._display));
-        this._settings.connect('changed::' + WA_SHOWBUTTONS,
+        this._settingsSignals.push(this._settings.connect(
+                'changed::' + WA_DO_METACITY,
+                Lang.bind(this, this._loadTheme)));
+        this._settingsSignals.push(this._settings.connect(
+                    'changed::' + WA_THEME,
+                Lang.bind(this, this._loadTheme)));
+        this._settingsSignals.push(this._settings.connect(
+                'changed::' + WA_ORDER,
+                Lang.bind(this, this._display)));
+        this._settingsSignals.push(this._settings.connect(
+                'changed::' + WA_PINCH,
+                Lang.bind(this, this._display)));
+        this._settingsSignals.push(this._settings.connect(
+                'changed::' + WA_SHOWBUTTONS,
                 Lang.bind(this, function () {
                     this._disconnectSignals();
                     this._connectSignals();
                     this._windowChanged();
-                }));
-        this._settings.connect('changed::' + WA_HIDEINOVERVIEW,
+                })));
+        this._settingsSignals.push(this._settings.connect(
+                'changed::' + WA_HIDEINOVERVIEW,
                 Lang.bind(this, function () {
                     this._disconnectSignals();
                     this._connectSignals();
                     this._windowChanged();
-                }));
+                })));
 
-        this._settings.connect('changed::' + WA_LEFTPOS, Lang.bind(this,
-                    this._onPositionChange, WA_LEFTPOS, WA_LEFTBOX));
-        this._settings.connect('changed::' + WA_RIGHTPOS, Lang.bind(this,
-                    this._onPositionChange, WA_RIGHTPOS, WA_RIGHTBOX));
+        this._settingsSignals.push(this._settings.connect(
+                'changed::' + WA_LEFTPOS,
+                Lang.bind(this, this._onPositionChange, WA_LEFTPOS, WA_LEFTBOX)));
+        this._settingsSignals.push(this._settings.connect(
+                'changed::' + WA_RIGHTPOS,
+                Lang.bind(this, this._onPositionChange, WA_RIGHTPOS, WA_RIGHTBOX)));
 
-        this._settings.connect('changed::' + WA_LEFTBOX, Lang.bind(this,
-                    this._onPositionChange, WA_LEFTPOS, WA_LEFTBOX));
-        this._settings.connect('changed::' + WA_RIGHTBOX, Lang.bind(this,
-                    this._onPositionChange, WA_RIGHTPOS, WA_RIGHTBOX));
+        this._settingsSignals.push(this._settings.connect(
+                'changed::' + WA_LEFTBOX,
+                Lang.bind(this, this._onPositionChange, WA_LEFTPOS, WA_LEFTBOX)));
+        this._settingsSignals.push(this._settings.connect(
+                'changed::' + WA_RIGHTBOX,
+                Lang.bind(this, this._onPositionChange, WA_RIGHTPOS, WA_RIGHTBOX)));
 
         // Connect to window change events
         this._wmSignals = [];
@@ -705,6 +723,10 @@ WindowButtons.prototype = {
         this.rightActor.destroy();
 
         /* disconnect all signals */
+        let i = this._settingsSignals.length;
+        while (i--) {
+            this._settings.disconnect(this._settingsSignals.pop());
+        }
         this._settings = null;
         this._disconnectSignals();
     }
