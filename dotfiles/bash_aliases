@@ -1,35 +1,34 @@
-# jumping - repos
-alias repos='cd ~/Repos'
-alias enspiral='cd ~/Repos/enspiral'
-alias work='cd ~/Repos/work'
-alias nix-settings='cd ~/Repos/NIX_settings'
+if [[ $platform == 'linux' ]]; then
+	alias ls='ls -F --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+	alias senz='sensors'
+elif [[ $platform == 'darwin' ]]; then
+	alias ls='ls -CF'
+	alias subl='sublime'	# sublime-text-2 as in Linux command subl
+fi
 
-# --- current projects
-alias insighter='cd ~/Repos/enspiral/insighter'
-
-# grep .bash_aliases
 alias cbag='cat ~/.bash_aliases | grep '
 
-# sublime-text-2 as in Linux command subl"
-alias subl='sublime'
+# linux, put in /etc/bash.bashrc
+alias clr='clear'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ..3='cd ../../../'
+
+alias ll='ls -al'
+alias la='ls -a'
+alias l='ls'
+# /etc/bash.bashrc
 
 # !=== Script ===
 alias rby='ruby'
 alias cfe='coffee'
 alias py='python'
 alias reg='regetron'
-
-# some more ls aliases
-alias ls='ls -CF'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-alias ..='cd ..'
-alias ...='cd ../../'
-alias ..3='cd ../../../'
-
-alias clr='clear'
 
 # !=== GIT ===
 alias gst='git status'
@@ -57,19 +56,24 @@ alias ztr='zeus test'
 alias ztc='zeus cucumber'
 alias zs='zeus server'
 alias zc='zeus console'
+alias zcb='zeus console --sandbox'
 alias zr='zeus rake'
 alias zd='zeus destroy'
 alias zg='zeus generate'
 
 # !=== RAILS ===
 alias rn='rails new'
-alias rc='rails console'
 alias rcb='rails console --sandbox'
-alias rs='rails server'
+alias rc='rails console'
 alias rg='rails generate'
 alias rd='rails destroy'
 
-alias renv='RAILS_ENV'
+alias rs='rails server'
+alias rs31='rails server --port=3001'
+alias rs32='rails server --port=3002'
+alias rs33='rails server --port=3003'
+alias rs34='rails server --port=3004'
+alias rs35='rails server --port=3005'
 
 alias bx='bundle exec'
 alias bxan='bundle exec annotate'
@@ -78,18 +82,30 @@ alias bxc='bundle exec cucumber'
 
 # !=== RAKE ===
 alias rdl='rake db:schema:load'
-alias rdrs='rake db:reset'
 alias rds='rake db:seed'
+alias rdr='rake db:reset'
 alias rddrop='rake db:drop'
 
 alias bxdl='bundle exec rake db:schema:load; bundle exec rake db:schema:load RAILS_ENV=test'
 alias bxdm='bundle exec rake db:migrate; bundle exec rake db:migrate RAILS_ENV=test'
-alias bxdr='bundle exec rake db:migrate:redo; bundle exec rake db:migrate:redo RAILS_ENV=test'
+alias bxdre='bundle exec rake db:migrate:redo; bundle exec rake db:migrate:redo RAILS_ENV=test'
+alias bxddr='bundle exec rake db:drop; bundle exec rake db:drop RAILS_ENV=test'
 alias bxdrb='bundle exec rake db:rollback'
-alias bxdrs='bundle exec rake db:reset'
 alias bxdpp='bundle exec rake db:populate; bundle exec rake db:test:prepare'
+
+# !=== GRUNT ===
+alias grtw='grunt watch'
 
 # !=== HEROKU ===
 alias herelic='heroku addons:open newrelic'
 alias helog='heroku logs'
 alias helgrep='heroku logs | grep '
+
+# jumping - repos
+alias repos='cd ~/Repos'
+alias enspiral='cd ~/Repos/enspiral'
+alias work='cd ~/Repos/work'
+alias nix-settings='cd ~/Repos/NIX_settings'
+
+# --- current projects
+alias insighter='cd ~/Repos/enspiral/insighter'
