@@ -1,5 +1,11 @@
-# jumping
-alias crep='cd ~/Repos'
+# jumping - repos
+alias repos='cd ~/Repos'
+alias enspiral='cd ~/Repos/enspiral'
+alias work='cd ~/Repos/work'
+alias nix-settings='cd ~/Repos/NIX_settings'
+
+# --- current projects
+alias insighter='cd ~/Repos/enspiral/insighter'
 
 # grep .bash_aliases
 alias cbag='cat ~/.bash_aliases | grep '
