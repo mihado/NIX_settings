@@ -1,8 +1,15 @@
+# Platform information
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   platform='darwin'
+fi
+
 export CLICOLOR=1
 # export LSCOLORS=GxFxCxDxBxegedabagaced
 export LSCOLORS=gxHxhxDxfxhxhxhxhxcxcx
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # $========== PARSE GIT ==========
 # http://henrik.nyh.se/2008/12/git-dirty-prompt/
