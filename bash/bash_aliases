@@ -54,12 +54,17 @@ alias shotgun47='shotgun --port=4567'
 alias zzs='zeus start'
 alias ztr='zeus test'
 alias ztc='zeus cucumber'
-alias zs='zeus server'
 alias zc='zeus console'
 alias zcb='zeus console --sandbox'
 alias zr='zeus rake'
 alias zd='zeus destroy'
 alias zg='zeus generate'
+alias zs='zeus server'
+alias zs31='rails server --port=3001'
+alias zs32='rails server --port=3002'
+alias zs33='rails server --port=3003'
+alias zs34='rails server --port=3004'
+alias zs35='rails server --port=3005'
 
 # !=== RAILS ===
 alias rn='rails new'
@@ -81,6 +86,8 @@ alias bxr='bundle exec rspec'
 alias bxc='bundle exec cucumber'
 
 # !=== RAKE ===
+alias rrgrep='rake routes | grep '
+
 alias rdl='rake db:schema:load'
 alias rds='rake db:seed'
 alias rdr='rake db:reset'
