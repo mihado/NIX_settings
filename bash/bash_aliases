@@ -25,9 +25,11 @@ alias l='ls'
 # /etc/bash.bashrc
 
 # !=== Ubuntu specific ===
-alias aptu='sudo apt-get update'
-alias aptuu='sudo apt-get update && sudo apt-upgrade'
+alias aptup='sudo apt-get update'
+alias aptug='suddo apt-get upgrade'
+alias aptuu='sudo apt-get update && sudo apt-get upgrade'
 alias aptrepo='sudo add-apt-repository '
+alias aptcs='apt-cache search '
 
 # !=== Script ===
 alias rby='ruby'
