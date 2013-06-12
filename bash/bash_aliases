@@ -100,12 +100,3 @@ alias grtw='grunt watch'
 alias herelic='heroku addons:open newrelic'
 alias helog='heroku logs'
 alias helgrep='heroku logs | grep '
-
-# jumping - repos
-alias repos='cd ~/Repos'
-alias enspiral='cd ~/Repos/enspiral'
-alias work='cd ~/Repos/work'
-alias nix-settings='cd ~/Repos/NIX_settings'
-
-# --- current projects
-alias insighter='cd ~/Repos/enspiral/insighter'

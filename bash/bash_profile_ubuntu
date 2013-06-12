@@ -1,6 +1,7 @@
 source ~/.bashrc
 source ~/.bash_aliases
 source ~/.profile
+source ~/.projects
 
 #### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

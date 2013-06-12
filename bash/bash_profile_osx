@@ -1,5 +1,6 @@
 source ~/.bashrc
 source ~/.bash_aliases
+source ~/.projects
 
 # http://wiki.octave.org/Installing_MacOS_X_Bundle
 # set the default gnuplot terminal
