@@ -24,6 +24,11 @@ alias ll='ls -al'
 alias l='ls'
 # /etc/bash.bashrc
 
+# !=== Ubuntu specific ===
+alias aptu='sudo apt-get update'
+alias aptuu='sudo apt-get update && sudo apt-upgrade'
+alias aptrepo='sudo add-apt-repository '
+
 # !=== Script ===
 alias rby='ruby'
 alias cfe='coffee'
