@@ -93,6 +93,7 @@ alias bxr='bundle exec rspec'
 alias bxc='bundle exec cucumber'
 
 # !=== RAKE ===
+alias rrt='rake routes'
 alias rrgrep='rake routes | grep '
 
 alias rdl='rake db:schema:load'
