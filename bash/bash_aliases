@@ -37,7 +37,8 @@ alias reg='regetron'
 
 # !=== GIT ===
 alias gst='git status'
-alias ga='git add'
+alias ga='git add --ignore-removal'
+alias gaa='git add --all'
 alias gc='git commit'
 alias gcmm='git commit -m'
 alias gca='git commit -a'
