@@ -26,7 +26,7 @@ alias l='ls'
 
 # !=== Ubuntu specific ===
 alias aptup='sudo apt-get update'
-alias aptug='suddo apt-get upgrade'
+alias aptug='sudo apt-get upgrade'
 alias aptuu='sudo apt-get update && sudo apt-get upgrade'
 alias aptrepo='sudo add-apt-repository '
 alias aptcs='apt-cache search '
