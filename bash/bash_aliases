@@ -23,6 +23,7 @@ elif [[ $platform == 'darwin' ]]; then
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
+alias bashrefresh='. ~/.bash_profile'
 
 # linux, put in /etc/bash.bashrc
 alias clr='clear'
