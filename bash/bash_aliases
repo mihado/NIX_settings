@@ -6,10 +6,20 @@ if [[ $platform == 'linux' ]]; then
 	alias fgrep='fgrep --color=auto'
 	alias egrep='egrep --color=auto'
 	alias senz='sensors'
+
+	# mysql
+	alias myxstart='sudo service mysql start'
+	alias mystop='sudo service mysql stop'
+	alias myrestart='sudo service mysql restart'
 elif [[ $platform == 'darwin' ]]; then
 	alias ls='ls -CF'
 	alias subl='sublime'	# sublime-text-2 as in Linux command subl
 	alias updatedb='sudo /usr/libexec/locate.updatedb'
+
+	# mysql
+	alias myxstart='/usr/local/bin/mysql.server start'
+	alias mystop='/usr/local/bin/mysql.server stop'
+	alias myrestart='/usr/local/bin/mysql.server restart'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
