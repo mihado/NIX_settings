@@ -27,7 +27,7 @@ alias l='ls'
 
 # !=== Ubuntu specific ===
 alias aptup='sudo apt-get update'
-alias aptug='suddo apt-get upgrade'
+alias aptug='sudo apt-get upgrade'
 alias aptuu='sudo apt-get update && sudo apt-get upgrade'
 alias aptrepo='sudo add-apt-repository '
 alias aptcs='apt-cache search '
@@ -95,6 +95,7 @@ alias bxr='bundle exec rspec'
 alias bxc='bundle exec cucumber'
 
 # !=== RAKE ===
+alias reset-test-db='bundle exec rake db:drop RAILS_ENV=test; bundle exec rake db:create RAILS_ENV=test; bundle exec rake db:schema:load RAILS_ENV=test'
 alias rrt='rake routes'
 alias rrgrep='rake routes | grep '
 
