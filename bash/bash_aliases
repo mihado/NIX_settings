@@ -9,6 +9,7 @@ if [[ $platform == 'linux' ]]; then
 elif [[ $platform == 'darwin' ]]; then
 	alias ls='ls -CF'
 	alias subl='sublime'	# sublime-text-2 as in Linux command subl
+	alias updatedb='sudo /usr/libexec/locate.updatedb'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
