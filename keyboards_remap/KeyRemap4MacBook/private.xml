@@ -84,12 +84,21 @@
   <!-- CMD to CONTROL -->
 	<item>
 		<name>Remap some COMMAND to CONTROL</name>
-		<item>
-		  <name>Keep CONTROL O to Terminal Default</name>
-		  <only>TERMINAL</only>
-		  <identifier>private.control_o_normal</identifier>
+	  <item>
+		  <name>CONTROL O as CMD O</name>
+		  <not>TERMINAL</not>
+		  <identifier>private.control_o_open</identifier>
 		  <autogen> --KeyToKey-- 
-		  	KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::O, ModifierFlag::CONTROL_L
+		  	KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::O, ModifierFlag::COMMAND_L 
+		  </autogen>
+	  </item>
+
+	  <item>
+		  <name>CONTROL D as CMD D</name>
+		  <not>TERMINAL</not>
+		  <identifier>private.control_d</identifier>
+		  <autogen> --KeyToKey-- 
+		  	KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::D, ModifierFlag::COMMAND_L 
 		  </autogen>
 	  </item>
 	  
@@ -100,14 +109,6 @@
 				KeyCode::Q, ModifierFlag::CONTROL_L, KeyCode::Q, ModifierFlag::COMMAND_L
 			</autogen>
 		</item>
-		
-		<item>
-		  <name>CONTROL O as CMD O</name>
-		  <identifier>private.control_o_open</identifier>
-		  <autogen> --KeyToKey-- 
-		  	KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::O, ModifierFlag::COMMAND_L 
-		  </autogen>
-	  </item>
 
 	  <item>
 		  <name>CONTROL I as CMD I</name>
