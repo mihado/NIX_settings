@@ -17,9 +17,9 @@ elif [[ $platform == 'darwin' ]]; then
 	alias updatedb='sudo /usr/libexec/locate.updatedb'
 
 	# mysql
-	alias myxstart='/usr/local/bin/mysql.server start'
-	alias mystop='/usr/local/bin/mysql.server stop'
-	alias myrestart='/usr/local/bin/mysql.server restart'
+	alias myxstart='mysql.server start'
+	alias mystop='mysql.server stop'
+	alias myrestart='mysql.server restart'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
