@@ -21,7 +21,7 @@
 
 /* default text style */
 stage {
-    font-family: cantarell, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 11pt;
     color: white;
 }
@@ -709,7 +709,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .window-close {
-    -shell-close-overlap: 16px;
+    -shell-close-overlap: 31px;
 }
 
 .window-clone-border {
