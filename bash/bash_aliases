@@ -116,6 +116,7 @@ alias rds='rake db:seed'
 alias rdrs='rake db:reset'
 alias rddr='rake db:drop'
 alias rdcr='rake db:create'
+alias rdstt='rake db:migrate:status'
 
 alias bxdl='bundle exec rake db:schema:load; bundle exec rake db:schema:load RAILS_ENV=test'
 alias bxdm='bundle exec rake db:migrate; bundle exec rake db:migrate RAILS_ENV=test'
