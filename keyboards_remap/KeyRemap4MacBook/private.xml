@@ -11,6 +11,19 @@
 		</item>
 	</item>
 
+	<!-- Keep Original -->
+	<item>
+		<name>Keep Original</name>
+		<item>
+			<name>OPT CMD I</name>
+			<identifier>private.option_command_i</identifier>
+			<autogen> --KeyToKey--
+				KeyCode::I, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L, KeyCode::I, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
+			</autogen>
+		</item>
+	</item>
+	<!-- Keep Original -->
+
 	<!-- Navigations -->
 	<item>
 		<name>COMMAND Navigations</name>
