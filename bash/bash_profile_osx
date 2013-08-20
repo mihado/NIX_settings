@@ -11,6 +11,7 @@ export GNUTERM=x11
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 # nodejs - npm
+# if homebrew
 # export NODE_PATH="/usr/local/share/npm/lib/node-modules"
 # export PATH="/usr/local/share/npm/bin:$PATH"
 

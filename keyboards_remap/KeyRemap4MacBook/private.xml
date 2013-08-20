@@ -11,6 +11,23 @@
 		</item>
 	</item>
 
+	<!-- TERMINAL ONLY -->
+	<item>
+  	<name>TERMINAL ONLY</name>
+  	<only>TERMINAL</only>
+  	<item>
+			<name>CMD n,m as moveToBeginning/EndOfLine</name>
+			<identifier>private.beginning_end_of_line_terminal</identifier>
+			<autogen> --KeyToKey-- 
+			  KeyCode::N, ModifierFlag::COMMAND_L, KeyCode::A, ModifierFlag::CONTROL_L
+			</autogen>
+			<autogen> --KeyToKey-- 
+			  KeyCode::M, ModifierFlag::COMMAND_L, KeyCode::E, ModifierFlag::CONTROL_L
+			</autogen>
+		</item>
+  </item>
+  <!-- TERMINAL ONLY ++ -->
+
 	<!-- Keep Original -->
 	<item>
 		<name>Keep Original</name>
