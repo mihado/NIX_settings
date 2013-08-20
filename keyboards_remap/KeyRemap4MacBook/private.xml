@@ -14,8 +14,8 @@
 	<!-- TERMINAL ONLY -->
 	<item>
   	<name>TERMINAL ONLY</name>
-  	<only>TERMINAL</only>
   	<item>
+  		<only>TERMINAL</only>
 			<name>CMD n,m as moveToBeginning/EndOfLine</name>
 			<identifier>private.beginning_end_of_line_terminal</identifier>
 			<autogen> --KeyToKey-- 
