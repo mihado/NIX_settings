@@ -2,6 +2,10 @@ source ~/.bashrc
 source ~/.bash_aliases
 source ~/.projects
 
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
 # http://wiki.octave.org/Installing_MacOS_X_Bundle
 # set the default gnuplot terminal
 export GNUTERM=x11
