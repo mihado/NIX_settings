@@ -1,0 +1,6 @@
+.DS_Store
+
+# Sublime Text stuffs
+/sublime-text-*/User.*/Package Control.*
+*.last-run
+*.cache

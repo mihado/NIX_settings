@@ -13,7 +13,7 @@ if [[ $platform == 'linux' ]]; then
 	alias myrestart='sudo service mysql restart'
 elif [[ $platform == 'darwin' ]]; then
 	alias ls='ls -CF'
-	alias subl='sublime'	# sublime-text-2 as in Linux command subl
+	alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'	# sublime-text as in Linux command subl
 	alias updatedb='sudo /usr/libexec/locate.updatedb'
 
 	# mysql

@@ -1,0 +1,20 @@
+[
+	{
+		"class": "sidebar_tree",
+		"dark_content": true,
+		"row_padding": [8, 3],
+		"indent": 15,
+		"indent_offset": 13,
+		"indent_top_level": false,
+		"layer0.tint": [48,48,48],	// MODDED: lighter gray
+		"layer0.opacity": 1.0,
+		"dark_content": true
+	},
+
+//	EMPTY WINDOW BACKGROUND
+	{
+		"class": "sheet_container_control",
+		"layer0.tint": [48, 48, 48],
+		"layer0.opacity": 1.0
+	}
+]
