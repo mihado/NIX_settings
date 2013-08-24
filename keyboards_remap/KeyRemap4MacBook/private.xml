@@ -9,6 +9,13 @@
 				KeyCode::Q, ModifierFlag::COMMAND_L, KeyCode::VK_NONE
 			</autogen>
 		</item>
+		<item>
+			<name>Disable COMMAND SHIFT W</name>
+			<identifier>private.disable_command_shift_w</identifier>
+			<autogen> --KeyToKey--
+				KeyCode::W, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L, KeyCode::VK_NONE
+			</autogen>
+		</item>
 	</item>
 
 	<!-- TERMINAL ONLY -->
