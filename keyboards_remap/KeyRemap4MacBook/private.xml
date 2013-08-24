@@ -158,6 +158,7 @@
   	
   	<item>
 	    <name>CONTROL U as CMD U</name>
+	    <not>TERMINAL</not>
 	    <identifier>private.control_u</identifier>
 	    <autogen> --KeyToKey-- 
 		    KeyCode::U, ModifierFlag::CONTROL_L, KeyCode::U, ModifierFlag::COMMAND_L
