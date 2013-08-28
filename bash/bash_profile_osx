@@ -24,3 +24,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 ### Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
+
+# List Globally, don't want to use pow
+export LISTGLOBALLY_HOST=http://localhost:3000
