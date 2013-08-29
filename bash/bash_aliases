@@ -88,7 +88,10 @@ alias zs33='rails server --port=3003'
 alias zs34='rails server --port=3004'
 alias zs35='rails server --port=3005'
 
-alias zrdm='zeus rake db:migrate; zeus rake db:migrate RAILS_ENV=test'
+alias zrt='zeus rake_test'
+alias zrdm='zeus rake db:migrate; zeus rake_test db:migrate'
+alias zrdrb='zeus rake db:rollback; zeus rake_test db:rollback'
+alias zeset-testdb='zeus rake_test db:drop; zeus rake_test db:create; zeus rake_test db:schema:load'
 
 # !=== RAILS ===
 alias rn='rails new'
@@ -111,7 +114,6 @@ alias bxc='bundle exec cucumber'
 
 # !=== RAKE ===
 alias reset-testdb='bundle exec rake db:drop RAILS_ENV=test; bundle exec rake db:create RAILS_ENV=test; bundle exec rake db:schema:load RAILS_ENV=test'
-alias zeset-testdb='zeus rake db:drop RAILS_ENV=test; zeus rake db:create RAILS_ENV=test; zeus rake db:schema:load RAILS_ENV=test'
 alias rrt='rake routes'
 alias rrgrep='rake routes | grep '
 
