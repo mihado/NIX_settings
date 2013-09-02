@@ -25,5 +25,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 ### Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 # List Globally, don't want to use pow
 export LISTGLOBALLY_HOST=http://localhost:3000
