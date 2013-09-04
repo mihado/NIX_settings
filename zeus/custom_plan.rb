@@ -9,7 +9,7 @@ class CustomPlan < Zeus::Rails
     # Set the environment to test before we load the default bundle
     ::Rails.env = ENV['RAILS_ENV'] = 'test'
 
-    # Mehtod built into Zeus::Rails
+    # Method built into Zeus::Rails
     default_bundle
   end
 
