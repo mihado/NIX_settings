@@ -138,3 +138,6 @@ alias grtw='grunt watch'
 alias herelic='heroku addons:open newrelic'
 alias helog='heroku logs'
 alias helgrep='heroku logs | grep '
+
+# !=== NODE ===
+alias jcfe='jasmine-node --coffee'
