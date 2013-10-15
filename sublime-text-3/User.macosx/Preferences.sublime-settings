@@ -7,5 +7,6 @@
 	[
 		"Vintage"
 	],
+	"show_full_path": true,
 	"theme": "Soda Light.sublime-theme"
 }
