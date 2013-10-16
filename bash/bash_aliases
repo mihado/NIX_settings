@@ -141,3 +141,7 @@ alias helgrep='heroku logs | grep '
 
 # !=== NODE ===
 alias jcfe='jasmine-node --coffee'
+
+# !=== CHEF ===
+alias kfc='knife cookbook'
+alias kfcsi='knife cookbook site install'
