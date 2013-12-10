@@ -5,6 +5,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Markdown Preview",
+		"VAlign",
 		"Vintage"
 	],
 	"show_full_path": true,
