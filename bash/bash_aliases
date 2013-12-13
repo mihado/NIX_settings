@@ -16,11 +16,8 @@ elif [[ $platform == 'darwin' ]]; then
 	alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 	alias subl2='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 	alias updatedb='sudo /usr/libexec/locate.updatedb'
-
-	# mysql
-	alias myxstart='mysql.server start'
-	alias mystop='mysql.server stop'
-	alias myrestart='mysql.server restart'
+	alias lload='launchctl load'
+	alias lunload='launchctl unload'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
@@ -50,6 +47,9 @@ alias cfe='coffee'
 alias py='python'
 
 # !=== GIT ===
+alias gd='git diff'
+alias gl='git log'
+alias gf='git fetch'
 alias gst='git status'
 alias ga='git add --ignore-removal'
 alias gaa='git add --all'
@@ -64,8 +64,6 @@ alias gbr='git branch --remote'
 alias gco='git checkout'
 alias gcm='git checkout master'
 alias gcp='git checkout production'
-alias gfg='git fetch github'
-alias gfb='git fetch bucket'
 
 # !=== GEMS ===
 alias ccb='cucumber'
@@ -82,11 +80,11 @@ alias zr='zeus rake'
 alias zd='zeus destroy'
 alias zg='zeus generate'
 alias zs='zeus server'
-alias zs31='rails server --port=3001'
-alias zs32='rails server --port=3002'
-alias zs33='rails server --port=3003'
-alias zs34='rails server --port=3004'
-alias zs35='rails server --port=3005'
+alias zs31='zeus server --port=3001'
+alias zs32='zeus server --port=3002'
+alias zs33='zeus server --port=3003'
+alias zs34='zeus server --port=3004'
+alias zs35='zeus server --port=3005'
 
 alias zrt='zeus rake_test'
 alias zrdm='zeus rake db:migrate; zeus rake_test db:migrate'
@@ -94,6 +92,9 @@ alias zrdrb='zeus rake db:rollback; zeus rake_test db:rollback'
 alias zeset-testdb='zeus rake_test db:drop; zeus rake_test db:create; zeus rake_test db:schema:load'
 
 # !=== RAILS ===
+alias dev='RAILS_ENV=development'
+alias test='RAILS_ENV=test'
+
 alias rn='rails new'
 alias rcb='rails console --sandbox'
 alias rc='rails console'
@@ -138,3 +139,11 @@ alias grtw='grunt watch'
 alias herelic='heroku addons:open newrelic'
 alias helog='heroku logs'
 alias helgrep='heroku logs | grep '
+
+# !=== NODE ===
+alias jcfe='jasmine-node --coffee'
+
+# !=== CHEF ===
+alias kfb='knife bootstrap'
+alias kfc='knife cookbook'
+alias kfcsi='knife cookbook site install'

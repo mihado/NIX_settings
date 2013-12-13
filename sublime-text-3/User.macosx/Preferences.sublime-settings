@@ -6,7 +6,10 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Markdown Preview",
+		"Vintage",
+		"VAlign"
 	],
+	"show_full_path": true,
 	"theme": "Soda Light.sublime-theme"
 }
