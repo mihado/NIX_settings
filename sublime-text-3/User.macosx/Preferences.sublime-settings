@@ -1,5 +1,6 @@
 {
 	"show_full_path": true,
+	"theme": "Soda Light.sublime-theme",
 	"color_scheme": "Packages/User/Oblivion.tmTheme",
 	"font_face": "Monaco",
 	"font_size": 12.0,
@@ -9,7 +10,5 @@
 		"Markdown Preview",
 		"Vintage",
 		"VAlign"
-	],
-	"show_full_path": true,
-	"theme": "Soda Light.sublime-theme"
+	]
 }
