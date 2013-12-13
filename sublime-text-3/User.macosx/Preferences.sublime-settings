@@ -6,8 +6,8 @@
 	"ignored_packages":
 	[
 		"Markdown Preview",
-		"VAlign",
-		"Vintage"
+		"Vintage",
+		"VAlign"
 	],
 	"show_full_path": true,
 	"theme": "Soda Light.sublime-theme"

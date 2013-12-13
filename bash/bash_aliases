@@ -50,6 +50,8 @@ alias cfe='coffee'
 alias py='python'
 
 # !=== GIT ===
+alias gd='git diff'
+alias gf='git fetch'
 alias gst='git status'
 alias ga='git add --ignore-removal'
 alias gaa='git add --all'
@@ -64,8 +66,6 @@ alias gbr='git branch --remote'
 alias gco='git checkout'
 alias gcm='git checkout master'
 alias gcp='git checkout production'
-alias gfg='git fetch github'
-alias gfb='git fetch bucket'
 
 # !=== GEMS ===
 alias ccb='cucumber'
@@ -94,6 +94,9 @@ alias zrdrb='zeus rake db:rollback; zeus rake_test db:rollback'
 alias zeset-testdb='zeus rake_test db:drop; zeus rake_test db:create; zeus rake_test db:schema:load'
 
 # !=== RAILS ===
+alias dev='RAILS_ENV=development'
+alias test='RAILS_ENV=test'
+
 alias rn='rails new'
 alias rcb='rails console --sandbox'
 alias rc='rails console'
