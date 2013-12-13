@@ -16,6 +16,8 @@ elif [[ $platform == 'darwin' ]]; then
 	alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 	alias subl2='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 	alias updatedb='sudo /usr/libexec/locate.updatedb'
+	alias lload='launchctl load'
+	alias lunload='launchctl unload'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
