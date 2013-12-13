@@ -48,6 +48,7 @@ alias py='python'
 
 # !=== GIT ===
 alias gd='git diff'
+alias gl='git log'
 alias gf='git fetch'
 alias gst='git status'
 alias ga='git add --ignore-removal'
