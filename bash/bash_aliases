@@ -94,9 +94,6 @@ alias zrdrb='zeus rake db:rollback; zeus rake_test db:rollback'
 alias zeset-testdb='zeus rake_test db:drop; zeus rake_test db:create; zeus rake_test db:schema:load'
 
 # !=== RAILS ===
-alias dev='RAILS_ENV=development'
-alias test='RAILS_ENV=test'
-
 alias rn='rails new'
 alias rcb='rails console --sandbox'
 alias rc='rails console'
