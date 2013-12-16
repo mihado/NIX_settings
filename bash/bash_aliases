@@ -18,6 +18,8 @@ elif [[ $platform == 'darwin' ]]; then
 	alias updatedb='sudo /usr/libexec/locate.updatedb'
 	alias lload='launchctl load'
 	alias lunload='launchctl unload'
+	alias myload='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
+	alias myunload='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
