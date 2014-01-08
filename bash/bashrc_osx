@@ -49,6 +49,3 @@ PS1="${TITLEBAR}$LIGHT_GRAY[\u@\h]: $DEFAULT\w/$LIGHT_GRAY\$(parse_git_branch)
 }
 proml
 # !========== PARSE GIT ==========
-
-### Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
