@@ -14,13 +14,15 @@
             },
             "gjslint": {
                 "@disable": false,
-                "args": [],
+                "args": ["--nojsdoc"],
                 "disable": "",
                 "excludes": [],
                 "jslint_error": "",
                 "max_line_length": null,
                 "ignore_match": [
-                	"Single-quoted string preferred over double-quoted string"
+                	"Single-quoted string preferred over double-quoted string",
+                	"Line too long",
+                	"Extra space"
                 ]
             },
             "haml": {
