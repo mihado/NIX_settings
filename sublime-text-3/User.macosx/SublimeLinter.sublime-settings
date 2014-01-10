@@ -18,7 +18,10 @@
                 "disable": "",
                 "excludes": [],
                 "jslint_error": "",
-                "max_line_length": null
+                "max_line_length": null,
+                "ignore_match": [
+                	"Single-quoted string preferred over double-quoted string"
+                ]
             },
             "haml": {
                 "@disable": false,
