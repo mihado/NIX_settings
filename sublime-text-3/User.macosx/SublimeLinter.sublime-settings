@@ -31,7 +31,9 @@
             "ruby": {
                 "@disable": false,
                 "args": [],
-                "excludes": []
+                "excludes": [
+                	"*/*.erb"
+                ]
             }
         },
         "mark_style": "outline",
