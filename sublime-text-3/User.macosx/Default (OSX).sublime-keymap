@@ -3,5 +3,6 @@
   { "keys": ["super+shift+;"], "command": "table_cleaner" },
   { "keys": ["alt+shift+;"], "command": "table_import" },
   { "keys": ["super+;"], "command": "alignment" },
-	{ "keys": ["ctrl+shift+w"], "command": "close_window" }
+  { "keys": ["command+'"], "command": "reindent" , "args": {"single_line": false} },
+  { "keys": ["ctrl+shift+w"], "command": "close_window" }
 ]
