@@ -2,7 +2,7 @@
   <content><![CDATA[require '$0']]></content>
   <tabTrigger>req</tabTrigger>
   <scope>source.ruby</scope>
-  <description>require ".."</description>
+  <description>require '..'</description>
 </snippet>
 
 <!-- Change the original Package/Ruby to reqd -->

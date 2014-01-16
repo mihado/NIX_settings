@@ -6,9 +6,10 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"VAlign",
 		"Vintage",
-		"Markdown Preview"
+		"Markdown Preview",
+		"SublimeCodeIntel",
+		"VAlign"
 	],
 	"show_encoding": true,
 	"show_full_path": true,
