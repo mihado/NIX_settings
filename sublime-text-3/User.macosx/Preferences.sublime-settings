@@ -6,13 +6,14 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage",
 		"Markdown Preview",
 		"SublimeCodeIntel",
+		"Vintage",
 		"VAlign"
 	],
 	"show_encoding": true,
 	"show_full_path": true,
 	"show_line_endings": true,
+	"draw_white_space": "all",
 	"theme": "Soda Light.sublime-theme"
 }
