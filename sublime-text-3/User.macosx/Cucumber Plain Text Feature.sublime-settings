@@ -1,7 +1,6 @@
 {
-	"extensions":
-	[
-		"feature"
-	],
-	"tab_size": 2
+  "extensions":
+  [
+    "feature"
+  ]
 }
