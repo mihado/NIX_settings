@@ -1,8 +1,9 @@
 [
 	{ "keys": ["alt+shift+w"], "command": "compile_and_display", "args": { "opt": "-p" } },
-  { "keys": ["super+shift+;"], "command": "table_cleaner" },
+  { "keys": ["command+shift+;"], "command": "table_cleaner" },
   { "keys": ["alt+shift+;"], "command": "table_import" },
-  { "keys": ["super+;"], "command": "alignment" },
+  { "keys": ["command+;"], "command": "alignment" },
   { "keys": ["command+'"], "command": "reindent" , "args": {"single_line": false} },
-  { "keys": ["ctrl+shift+w"], "command": "close_window" }
+  { "keys": ["ctrl+shift+w"], "command": "close_window" },
+  { "keys": ["command+y"], "command": "redo" }
 ]
