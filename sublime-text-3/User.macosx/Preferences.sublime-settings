@@ -1,19 +1,19 @@
 {
+  "theme": "Soda Light.sublime-theme",
   "color_scheme": "Packages/User/Oblivion (SL).tmTheme",
-  "enable_tab_scrolling": false,
   "font_face": "Monaco",
   "font_size": 12.0,
+  "enable_tab_scrolling": false,
+  "show_full_path": true,
+  "show_encoding": true,
+  "show_line_endings": true,
+  "draw_white_space": "all",
   "highlight_line": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
   "ignored_packages":
   [
     "Markdown Preview",
     "SublimeCodeIntel"
-  ],
-  "tab_size": 2,
-  "draw_white_space": "all",
-  "translate_tabs_to_spaces": true,
-  "show_encoding": true,
-  "show_full_path": true,
-  "show_line_endings": true,
-  "theme": "Soda Light.sublime-theme"
+  ]
 }
