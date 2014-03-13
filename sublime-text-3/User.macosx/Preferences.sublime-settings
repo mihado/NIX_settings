@@ -14,6 +14,7 @@
   "ignored_packages":
   [
     "Markdown Preview",
-    "SublimeCodeIntel"
+    "SublimeCodeIntel",
+    "Vintage"
   ]
 }
