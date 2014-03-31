@@ -7,19 +7,32 @@ if [[ $platform == 'linux' ]]; then
 	alias egrep='egrep --color=auto'
 	alias senz='sensors'
 
-	# mysql
 	alias myxstart='sudo service mysql start'
 	alias mystop='sudo service mysql stop'
 	alias myrestart='sudo service mysql restart'
+
+	# !=== Ubuntu specific ===
+	alias aptup='sudo apt-get update'
+	alias aptug='sudo apt-get upgrade'
+	alias aptuu='sudo apt-get update && sudo apt-get upgrade'
+	alias aptrepo='sudo add-apt-repository '
+	alias aptcs='apt-cache search '
+
 elif [[ $platform == 'darwin' ]]; then
 	alias ls='ls -CF'
 	alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 	alias subl2='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 	alias updatedb='sudo /usr/libexec/locate.updatedb'
+
 	alias lload='launchctl load'
 	alias lunload='launchctl unload'
+	alias sulload='sudo launchctl load'
+	alias sulunload='sudo launchctl unload'
+
 	alias myload='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
 	alias myunload='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
+	alias nginxload='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+	alias nginxunload='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
@@ -35,13 +48,6 @@ alias la='ls -a'
 alias ll='ls -al'
 alias l='ls'
 # /etc/bash.bashrc
-
-# !=== Ubuntu specific ===
-alias aptup='sudo apt-get update'
-alias aptug='sudo apt-get upgrade'
-alias aptuu='sudo apt-get update && sudo apt-get upgrade'
-alias aptrepo='sudo add-apt-repository '
-alias aptcs='apt-cache search '
 
 # !=== Script ===
 alias rby='ruby'
