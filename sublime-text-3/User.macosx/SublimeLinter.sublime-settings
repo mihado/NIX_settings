@@ -19,7 +19,8 @@
         ],
         "excludes":
         [
-        ]
+        ],
+        "max_line_length": null
       },
       "gjslint":
       {
