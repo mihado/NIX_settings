@@ -114,6 +114,8 @@ alias rs33='rails server --port=3003'
 alias rs34='rails server --port=3004'
 alias rs35='rails server --port=3005'
 
+alias r2s='script/server'
+
 alias bx='bundle exec'
 alias bxan='bundle exec annotate'
 alias bxr='bundle exec rspec'
