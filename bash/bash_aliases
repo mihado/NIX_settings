@@ -155,3 +155,6 @@ alias jcfe='jasmine-node --coffee'
 alias kfb='knife bootstrap'
 alias kfc='knife cookbook'
 alias kfcsi='knife cookbook site install'
+
+# !=== RBENV ===
+alias rbh='rbenv rehash'
