@@ -115,6 +115,7 @@ alias rs34='rails server --port=3004'
 alias rs35='rails server --port=3005'
 
 alias r2s='script/server'
+alias r2c='script/console'
 
 alias bx='bundle exec'
 alias bxan='bundle exec annotate'
@@ -125,12 +126,6 @@ alias bxc='bundle exec cucumber'
 alias reset-testdb='bundle exec rake db:drop RAILS_ENV=test; bundle exec rake db:create RAILS_ENV=test; bundle exec rake db:schema:load RAILS_ENV=test'
 alias rrt='rake routes'
 alias rrgrep='rake routes | grep '
-
-alias rdl='rake db:schema:load'
-alias rds='rake db:seed'
-alias rdrs='rake db:reset'
-alias rddr='rake db:drop'
-alias rdcr='rake db:create'
 alias rdstt='rake db:migrate:status'
 
 alias bxdl='bundle exec rake db:schema:load; bundle exec rake db:schema:load RAILS_ENV=test'
@@ -138,7 +133,6 @@ alias bxdm='bundle exec rake db:migrate; bundle exec rake db:migrate RAILS_ENV=t
 alias bxdre='bundle exec rake db:migrate:redo; bundle exec rake db:migrate:redo RAILS_ENV=test'
 alias bxddr='bundle exec rake db:drop; bundle exec rake db:drop RAILS_ENV=test'
 alias bxdrb='bundle exec rake db:rollback'
-alias bxdpp='bundle exec rake db:populate; bundle exec rake db:test:prepare'
 
 # !=== GRUNT ===
 alias grtw='grunt watch'
