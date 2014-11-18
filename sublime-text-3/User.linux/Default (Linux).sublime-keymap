@@ -1,3 +1,5 @@
 [
-	{"keys": ["alt+shift+w"], "command": "compile_and_display", "args": {"opt": "-p"}}
+  { "keys": ["alt+shift+w"], "command": "compile_and_display", "args": { "opt": "-p" } },
+  { "keys": ["alt+;"], "command": "alignment" },
+  { "keys": ["alt+'"], "command": "reindent" , "args": {"single_line": false} }
 ]
