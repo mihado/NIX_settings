@@ -6,12 +6,12 @@
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
 	"font_face": "Monaco",
-	"font_size": 12.0,
+	"font_size": 10.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"SublimeCodeIntel",
-		"Vintage"
+		"Vintage",
+		"SublimeCodeIntel"
 	],
 	"line_padding_top": 1,
 	"scroll_past_end": true,
