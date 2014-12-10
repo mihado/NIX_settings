@@ -15,6 +15,9 @@ export GNUTERM=x11
 # use git installed by homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
+# Paker (packer.io)
+export PATH="/usr/local/packer/bin:$PATH"
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
