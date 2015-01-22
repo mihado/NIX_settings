@@ -146,9 +146,7 @@ alias helgrep='heroku logs | grep '
 alias jcfe='jasmine-node --coffee'
 
 # !=== CHEF ===
-alias kfb='knife bootstrap'
-alias kfc='knife cookbook'
-alias kfcsi='knife cookbook site install'
+alias knife-devxero='KNIFE_ENV=devxero knife'
 
 # !=== RBENV ===
 alias rbh='rbenv rehash'
