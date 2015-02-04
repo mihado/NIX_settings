@@ -1,5 +1,5 @@
 {
-    "usageCount": 103, 
+    "usageCount": 128, 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -15,7 +15,7 @@
         "modifiers": []
     }, 
     "filter": {
-        "regex": "^(.*Sublime|.*Gedit|.*Nautilus|.*Firefox).*$", 
+        "regex": "^(.*Sublime|.*Gedit|.*Atom|.*Nautilus|.*Firefox).*$ (Recursive)"
         "isRecursive": true
     }, 
     "type": "folder", 
