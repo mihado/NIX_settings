@@ -15,7 +15,7 @@
         "modifiers": []
     }, 
     "filter": {
-        "regex": "^(.*Sublime|.*Gedit|.*Nautilus|.*Firefox).*$", 
+        "regex": "^(.*Sublime|.*Gedit|.*Atom|.*Nautilus|.*Firefox).*$", 
         "isRecursive": true
     }, 
     "type": "folder", 
