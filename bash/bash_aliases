@@ -73,6 +73,7 @@ alias gbr='git branch --remote'
 alias gco='git checkout'
 alias gcm='git checkout master'
 alias gcp='git checkout production'
+alias gto='git checkout -' # switch between two current branches
 
 # !=== GEMS ===
 alias ccb='cucumber'
