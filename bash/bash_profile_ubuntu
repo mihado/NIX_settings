@@ -1,5 +1,9 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 
+# chefdk
+export PATH="/opt/chefdk/embedded/bin:$PATH"
+export PATH="/opt/chefdk/bin:$PATH"
+
 source ~/.bashrc
 source ~/.bash_aliases
 
