@@ -11,15 +11,18 @@ fi
 # set the default gnuplot terminal
 export GNUTERM=x11
 
-# http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
-# use git installed by homebrew
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
-
-# Paker (packer.io)
-export PATH="/usr/local/packer/bin:$PATH"
+# Otto (ottoproject.io)
+export PATH="/usr/local/otto/bin:$PATH"
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Android SDK
+export PATH="~/Library/Android/sdk/platform-tools:$PATH"
+
+# http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
+# use git installed by homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 # nvm
 export NVM_DIR=~/.nvm
@@ -27,3 +30,6 @@ source $(brew --prefix nvm)/nvm.sh
 
 # rbenv
 eval "$(rbenv init -)"
+
+# gvm
+[[ -s "/Users/katze/.gvm/scripts/gvm" ]] && source "/Users/katze/.gvm/scripts/gvm"
