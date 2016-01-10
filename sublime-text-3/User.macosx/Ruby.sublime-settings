@@ -2,7 +2,8 @@
 	"extensions":
 	[
 		"Vagrantfile",
-    "Thorfile",
-    "Berksfile"
+		"Thorfile",
+		"Berksfile",
+		"template"
 	]
 }
