@@ -6,5 +6,6 @@
   { "keys": ["command+'"], "command": "reindent" , "args": {"single_line": false} },
   { "keys": ["ctrl+shift+w"], "command": "close_window" },
   { "keys": ["command+y"], "command": "redo" },
-  { "keys": ["command+ctrl+shift+s"], "command": "trimmer" }
+  { "keys": ["command+ctrl+shift+s"], "command": "trimmer" },
+  { "keys": ["ctrl+shift+super+c"], "command": "rubocop_check_single_file" }
 ]
