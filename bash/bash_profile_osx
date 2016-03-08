@@ -14,11 +14,9 @@ export GNUTERM=x11
 # Otto (ottoproject.io)
 export PATH="/usr/local/otto/bin:$PATH"
 
-# Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # Android SDK
-export PATH="~/Library/Android/sdk/platform-tools:$PATH"
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 
 # http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
 # use git installed by homebrew
