@@ -133,3 +133,6 @@ alias knife-devxero='KNIFE_ENV=devxero knife'
 
 # !=== RBENV ===
 alias rbh='rbenv rehash'
+
+# !=== React Native ===
+alias rem='adb shell input keyevent 82'
