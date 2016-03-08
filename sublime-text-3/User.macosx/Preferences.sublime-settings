@@ -10,8 +10,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"SublimeCodeIntel"
+		"SublimeCodeIntel",
+		"Vintage"
 	],
 	"line_padding_top": 1,
 	"scroll_past_end": true,
