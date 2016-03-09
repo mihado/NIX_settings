@@ -14,7 +14,8 @@ export GNUTERM=x11
 # Otto (ottoproject.io)
 export PATH="/usr/local/otto/bin:$PATH"
 
-# Android SDK
+# Android SDK - NDK
+export ANDROID_NDK=/usr/local/opt/android-ndk
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 
