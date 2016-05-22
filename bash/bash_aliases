@@ -90,12 +90,12 @@ alias rc='rails console'
 alias rg='rails generate'
 alias rd='rails destroy'
 
-alias rs='rails server'
-alias rs31='rails server --port=3001'
-alias rs32='rails server --port=3002'
-alias rs33='rails server --port=3003'
-alias rs34='rails server --port=3004'
-alias rs35='rails server --port=3005'
+alias rs='rails server -b 0.0.0.0'
+alias rs31='rails server -b 0.0.0.0 --port=3001'
+alias rs32='rails server -b 0.0.0.0 --port=3002'
+alias rs33='rails server -b 0.0.0.0 --port=3003'
+alias rs34='rails server -b 0.0.0.0 --port=3004'
+alias rs35='rails server -b 0.0.0.0 --port=3005'
 
 alias r2s='script/server'
 alias r2c='script/console'
@@ -136,3 +136,10 @@ alias rbh='rbenv rehash'
 
 # !=== React Native ===
 alias rem='adb shell input keyevent 82'
+alias ran='react-native run-android'
+alias rio='react-native run-android'
+alias xrev='adb reverse tcp:8081 tcp:8081'
+alias xlog='adb logcat *:S ReactNative:V ReactNativeJS:V'
+
+# !=== Android ===
+alias run5x='emulator -avd Nexus_5X -gpu on -no-boot-anim'
