@@ -32,3 +32,5 @@ eval "$(rbenv init -)"
 
 # gvm
 [[ -s "/Users/katze/.gvm/scripts/gvm" ]] && source "/Users/katze/.gvm/scripts/gvm"
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
