@@ -56,7 +56,7 @@ alias py='python'
 
 # !=== GIT ===
 alias gd='git diff'
-alias gdc='git diff --cached -w'
+alias gdc='git diff --cached'
 alias gl='git log'
 alias gl1='git log --oneline --decorate'
 alias gf='git fetch'
@@ -120,17 +120,6 @@ alias bxdrb='bundle exec rake db:rollback'
 # !=== GRUNT ===
 alias grtw='grunt watch'
 
-# !=== HEROKU ===
-alias herelic='heroku addons:open newrelic'
-alias helog='heroku logs'
-alias helgrep='heroku logs | grep '
-
-# !=== NODE ===
-alias jcfe='jasmine-node --coffee'
-
-# !=== CHEF ===
-alias knife-devxero='KNIFE_ENV=devxero knife'
-
 # !=== RBENV ===
 alias rbh='rbenv rehash'
 
@@ -141,5 +130,10 @@ alias rio='react-native run-android'
 alias xrev='adb reverse tcp:8081 tcp:8081'
 alias xlog='adb logcat *:S ReactNative:V ReactNativeJS:V'
 
+# !=== adb ===
+alias atx='adb shell input text'
+
 # !=== Android ===
-alias run5x='emulator -avd Nexus_5X -gpu on -no-boot-anim'
+alias 5x_5='emulator -avd Nexus_5X_5 -gpu on -no-boot-anim'
+alias 5x_51='emulator -avd Nexus_5X -gpu on -no-boot-anim'
+alias 5x_6='emulator -avd Nexus_5X_6 -gpu on -no-boot-anim'
