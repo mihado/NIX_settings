@@ -11,26 +11,25 @@ fi
 # set the default gnuplot terminal
 export GNUTERM=x11
 
-# Otto (ottoproject.io)
-export PATH="/usr/local/otto/bin:$PATH"
-
-# Android SDK - NDK
-export ANDROID_NDK=/usr/local/opt/android-ndk
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
-
-# http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
-# use git installed by homebrew
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+# rbenv
+eval "$(rbenv init -)"
 
 # nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# rbenv
-eval "$(rbenv init -)"
-
 # gvm
 [[ -s "/Users/katze/.gvm/scripts/gvm" ]] && source "/Users/katze/.gvm/scripts/gvm"
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+
+# https://github.com/asdf-vm/asdf
+source $HOME/.asdf/asdf.sh
+source $HOME/.asdf/completions/asdf.bash
+
+# http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
+# use git installed by homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
+# Android SDK - NDK
+export ANDROID_NDK=/usr/local/opt/android-ndk
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
