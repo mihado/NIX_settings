@@ -9,7 +9,7 @@ fi
 
 # http://wiki.octave.org/Installing_MacOS_X_Bundle
 # set the default gnuplot terminal
-export GNUTERM=x11
+# export GNUTERM=x11
 
 # rbenv
 eval "$(rbenv init -)"
