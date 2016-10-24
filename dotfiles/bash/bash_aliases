@@ -106,7 +106,7 @@ alias bxr='bundle exec rspec'
 alias bxc='bundle exec cucumber'
 
 # !=== RAKE ===
-alias reset-testdb='bundle exec rake db:drop RAILS_ENV=test; bundle exec rake db:create RAILS_ENV=test; bundle exec rake db:migrate RAILS_ENV=test'
+alias rails-reset-testdb='bundle exec rake db:drop RAILS_ENV=test; bundle exec rake db:create RAILS_ENV=test; bundle exec rake db:migrate RAILS_ENV=test'
 alias rrt='rake routes'
 alias rrgrep='rake routes | grep '
 alias rdstt='rake db:migrate:status'
@@ -137,3 +137,5 @@ alias atx='adb shell input text'
 alias 5x_5='emulator -avd Nexus_5X_5 -gpu on -no-boot-anim'
 alias 5x_51='emulator -avd Nexus_5X -gpu on -no-boot-anim'
 alias 5x_6='emulator -avd Nexus_5X_6 -gpu on -no-boot-anim'
+
+alias opensslrand='openssl rand -base64'
