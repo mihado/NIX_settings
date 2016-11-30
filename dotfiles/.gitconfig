@@ -1,6 +1,6 @@
 [user]
 	name = Minh Ha
-	email = minh.nhat.ha@gmail.com
+	email = mihado@minh.im
 [push]
 	default = current
 [core]
@@ -12,3 +12,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[commit]
+	template = /Users/katze/.stCommitMsg
