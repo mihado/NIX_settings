@@ -49,12 +49,12 @@ alias ll='ls -al'
 alias l='ls'
 # /etc/bash.bashrc
 
-# !=== Script ===
+# === Script ===
 alias rby='ruby'
 alias cfe='coffee'
 alias py='python'
 
-# !=== GIT ===
+# === GIT ===
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gl='git log'
@@ -77,12 +77,12 @@ alias gcm='git checkout master'
 alias gcp='git checkout production'
 alias gto='git checkout -' # switch between two current branches
 
-# !=== GEMS ===
+# === GEMS ===
 alias ccb='cucumber'
 alias rsp='rspec'
 alias shotgun47='shotgun --port=4567'
 
-# !=== RAILS ===
+# === RAILS ===
 alias rn='rails new'
 alias rcb='rails console --sandbox'
 alias rct='RAILS_ENV=test rails console'
@@ -105,7 +105,7 @@ alias bxan='bundle exec annotate'
 alias bxr='bundle exec rspec'
 alias bxc='bundle exec cucumber'
 
-# !=== RAKE ===
+# === RAKE ===
 alias rails-reset-testdb='bundle exec rake db:drop RAILS_ENV=test; bundle exec rake db:create RAILS_ENV=test; bundle exec rake db:migrate RAILS_ENV=test'
 alias rrt='rake routes'
 alias rrgrep='rake routes | grep '
@@ -117,23 +117,26 @@ alias bxdre='bundle exec rake db:migrate:redo; bundle exec rake db:migrate:redo 
 alias bxddr='bundle exec rake db:drop; bundle exec rake db:drop RAILS_ENV=test'
 alias bxdrb='bundle exec rake db:rollback'
 
-# !=== GRUNT ===
+# === EMBER ===
+alias eg='ember generate'
+
+# === GRUNT ===
 alias grtw='grunt watch'
 
-# !=== RBENV ===
+# === RBENV ===
 alias rbh='rbenv rehash'
 
-# !=== React Native ===
+# === React Native ===
 alias rem='adb shell input keyevent 82'
 alias ran='react-native run-android'
 alias rio='react-native run-android'
 alias xrev='adb reverse tcp:8081 tcp:8081'
 alias xlog='adb logcat *:S ReactNative:V ReactNativeJS:V'
 
-# !=== adb ===
+# === adb ===
 alias atx='adb shell input text'
 
-# !=== Android ===
+# === Android ===
 alias 5x_5='emulator -avd Nexus_5X_5 -gpu on -no-boot-anim'
 alias 5x_51='emulator -avd Nexus_5X -gpu on -no-boot-anim'
 alias 5x_6='emulator -avd Nexus_5X_6 -gpu on -no-boot-anim'
