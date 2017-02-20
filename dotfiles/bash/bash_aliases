@@ -27,15 +27,11 @@ elif [[ $platform == 'darwin' ]]; then
 	alias lunload='launchctl unload'
 	alias sulload='sudo launchctl load'
 	alias sulunload='sudo launchctl unload'
-
-	alias myload='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
-	alias myunload='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
-	alias nginxload='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
-	alias nginxunload='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
-alias bashrefresh='. ~/.bash_profile'
+alias psg='ps auxw | grep '
+alias bash-refresh='. ~/.bash_profile'
 
 # linux, put in /etc/bash.bashrc
 alias clr='clear'
@@ -141,4 +137,3 @@ alias 5x_51='emulator -avd Nexus_5X -gpu on -no-boot-anim'
 alias 5x_6='emulator -avd Nexus_5X_6 -gpu on -no-boot-anim'
 
 alias opensslrand='openssl rand -base64'
-alias psg='ps auxw | grep'
