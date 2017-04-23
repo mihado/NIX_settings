@@ -29,8 +29,6 @@ source $HOME/.asdf/completions/asdf.bash
 # use git installed by homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
-export PATH="$PATH:$HOME/.yarn/bin"
-
 # Android SDK - NDK
 export ANDROID_NDK=/usr/local/opt/android-ndk
 export ANDROID_HOME=/usr/local/opt/android-sdk
