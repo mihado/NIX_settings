@@ -1,0 +1,27 @@
+{
+  "title": "left_command functions",
+  "rules": [
+    {
+      "description": "left_command+d DELETE",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "delete_or_backspace"
+          }]
+        }
+      ]
+    }
+  ]
+}
