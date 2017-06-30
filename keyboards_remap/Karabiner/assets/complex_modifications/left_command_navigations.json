@@ -2,7 +2,7 @@
   "title": "left_command navigations",
   "rules": [
     {
-      "description": "left_command+ijkl to arrow keys",
+      "description": "left_cmd+ijkl -> arrow keys",
       "manipulators": [
         {
           "type": "basic",
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "description": "left_command+nm => right_command left/right",
+      "description": "left_cmd+nm -> right_cmd+left/right",
       "manipulators": [
         {
           "type": "basic",
@@ -114,6 +114,55 @@
             "key_code": "right_arrow",
             "modifiers": [
               "right_command"
+            ]
+          }]
+        }
+      ]
+    },
+    {
+      "description": "left_cmd+shift+uo -> cmd+shift+[]",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_shift"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "open_bracket",
+            "modifiers": [
+              "right_command",
+              "right_shift"
+            ]
+          }]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_shift"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "close_bracket",
+            "modifiers": [
+              "right_command",
+              "right_shift"
             ]
           }]
         }
