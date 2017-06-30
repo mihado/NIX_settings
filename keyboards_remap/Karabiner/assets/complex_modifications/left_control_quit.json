@@ -1,0 +1,47 @@
+{
+  "title": "left_control quit",
+  "rules": [
+    {
+      "description": "left_control+q -> cmd+q, escape left_cmd+q",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "q",
+            "modifiers": [
+              "right_command"
+            ]
+          }]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "escape"
+          }]
+        }
+      ]
+    }
+  ]
+}
