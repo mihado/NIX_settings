@@ -3,7 +3,8 @@
   "rules": [
     {
       "description": "left_command+ijkl to arrow keys",
-      "manipulators": [{
+      "manipulators": [
+        {
           "type": "basic",
           "from": {
             "key_code": "j",
@@ -69,6 +70,51 @@
           },
           "to": [{
             "key_code": "right_arrow"
+          }]
+        }
+      ]
+    },
+    {
+      "description": "left_command+nm => right_command left/right",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow",
+            "modifiers": [
+              "right_command"
+            ]
+          }]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow",
+            "modifiers": [
+              "right_command"
+            ]
           }]
         }
       ]
