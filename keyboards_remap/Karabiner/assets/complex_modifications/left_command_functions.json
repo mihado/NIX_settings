@@ -2,7 +2,7 @@
   "title": "left_command functions",
   "rules": [
     {
-      "description": "left_command+d DELETE",
+      "description": "left_command+d delete forward",
       "manipulators": [
         {
           "type": "basic",
@@ -18,7 +18,7 @@
             }
           },
           "to": [{
-            "key_code": "delete_or_backspace"
+            "key_code": "delete_forward"
           }]
         }
       ]
