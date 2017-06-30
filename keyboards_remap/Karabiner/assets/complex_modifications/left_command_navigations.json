@@ -120,6 +120,45 @@
       ]
     },
     {
+      "description": "left_cmd+uo -> page_up/page_down",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "page_up"
+          }]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "page_down"
+          }]
+        }
+      ]
+    },
+    {
       "description": "left_cmd+shift+uo -> cmd+shift+[]",
       "manipulators": [
         {
