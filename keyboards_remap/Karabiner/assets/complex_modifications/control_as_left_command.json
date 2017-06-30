@@ -1,0 +1,30 @@
+{
+  "title": "left_control functions",
+  "rules": [
+    {
+      "description": "left_control -> right_cmd d",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "d",
+            "modifiers": [
+              "right_command"
+            ]
+          }]
+        }
+      ]
+    }
+  ]
+}
