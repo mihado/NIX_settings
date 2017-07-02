@@ -1,8 +1,8 @@
 {
-  "title": "left_control functions",
+  "title": "left_control -> right_cmd",
   "rules": [
     {
-      "description": "left_control -> right_cmd dlno",
+      "description": "left_control+d",
       "manipulators": [
         {
           "type": "basic",
@@ -23,7 +23,12 @@
               "right_command"
             ]
           }]
-        },
+        }
+      ]
+    },
+    {
+      "description": "left_control+l",
+      "manipulators": [
         {
           "type": "basic",
           "from": {
@@ -43,7 +48,12 @@
               "right_command"
             ]
           }]
-        },
+        }
+      ]
+    },
+    {
+      "description": "left_control+n",
+      "manipulators": [
         {
           "type": "basic",
           "from": {
@@ -63,7 +73,12 @@
               "right_command"
             ]
           }]
-        },
+        }
+      ]
+    },
+    {
+      "description": "left_control+o",
+      "manipulators": [
         {
           "type": "basic",
           "from": {
