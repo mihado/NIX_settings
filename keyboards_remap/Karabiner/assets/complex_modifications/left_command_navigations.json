@@ -129,9 +129,6 @@
             "modifiers": {
               "mandatory": [
                 "left_command"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -146,9 +143,6 @@
             "modifiers": {
               "mandatory": [
                 "left_command"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -169,9 +163,6 @@
               "mandatory": [
                 "left_command",
                 "left_shift"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -191,9 +182,6 @@
               "mandatory": [
                 "left_command",
                 "left_shift"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
