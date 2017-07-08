@@ -14,6 +14,14 @@ fi
 # rbenv
 eval "$(rbenv init -)"
 
+# python
+export PATH=/usr/local/miniconda3/bin:"$PATH"
+
+# cuda
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$CUDA_HOME/lib:$CUDA_HOME:$CUDA_HOME/extras/CUPTI/lib"
+export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
+
 # nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -37,3 +45,5 @@ export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/imagemagick@6/lib/pkgconfig"
+export PATH="/usr/local/opt/elasticsearch@1.7/bin:$PATH"
