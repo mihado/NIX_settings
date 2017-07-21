@@ -15,7 +15,7 @@ fi
 eval "$(rbenv init -)"
 
 # python
-export PATH=/usr/local/miniconda3/bin:"$PATH"
+export PATH="/usr/local/miniconda3/bin:$PATH"
 
 # nvm
 export NVM_DIR=~/.nvm
