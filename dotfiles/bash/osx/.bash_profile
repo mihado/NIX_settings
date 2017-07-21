@@ -1,7 +1,7 @@
 source ~/.bashrc
 source ~/.bash_aliases
-source ~/.projects
-source ~/.env
+[[ -s ~/.paths ]] && source ~/.paths
+[[ -s ~/.env ]] && source ~/.env
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
