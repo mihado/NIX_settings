@@ -42,7 +42,7 @@ export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 
 # cuda
-export PATH=/Developer/NVIDIA/CUDA-9.0/bin${PATH:+:${PATH}}
-export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-9.0/lib${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
+export PATH=/Developer/NVIDIA/CUDA-8.0/bin${PATH:+:${PATH}}
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
 # cuDNN
 export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
