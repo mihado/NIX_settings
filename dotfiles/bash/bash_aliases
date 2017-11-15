@@ -140,5 +140,4 @@ alias 5x_6='emulator -avd Nexus_5X_6 -gpu on -no-boot-anim'
 alias opensslrand='openssl rand -base64'
 
 # === TensorFlow ===
-alias tfactivate='source activate tensorflow'
-alias tfdeactivate='source deactivate tensorflow'
+alias tfactivate='source $HOME/tensorflow/bin/activate'
