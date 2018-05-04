@@ -2,12 +2,12 @@
   "title": "left_command navigations",
   "rules": [
     {
-      "description": "left_cmd+ijkl -> arrow keys",
+      "description": "left_cmd+hjkl -> arrow keys",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "j",
+            "key_code": "h",
             "modifiers": {
               "mandatory": [
                 "left_command"
@@ -24,7 +24,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "k",
+            "key_code": "j",
             "modifiers": {
               "mandatory": [
                 "left_command"
@@ -41,7 +41,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "k",
             "modifiers": {
               "mandatory": [
                 "left_command"
