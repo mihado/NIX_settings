@@ -11,21 +11,6 @@ fi
 # set the default gnuplot terminal
 # export GNUTERM=x11
 
-# rbenv
-eval "$(rbenv init -)"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# homebrew asdf
-source /usr/local/opt/asdf/asdf.sh
-
-# http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
-# use git installed by homebrew
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
-
 # Android SDK - NDK
 export ANDROID_NDK=/usr/local/opt/android-ndk
 export ANDROID_HOME=/usr/local/opt/android-sdk
@@ -46,3 +31,23 @@ export PATH=/Developer/NVIDIA/CUDA-8.0/bin${PATH:+:${PATH}}
 export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
 # cuDNN
 export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
+
+# http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
+# use git installed by homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
+# added by Miniconda3 installer
+export PATH="/Users/mihado/miniconda3/bin:$PATH"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# homebrew asdf
+source /usr/local/opt/asdf/asdf.sh
+
+# rbenv
+eval "$(rbenv init -)"
+
+eval "$(direnv hook bash)"
