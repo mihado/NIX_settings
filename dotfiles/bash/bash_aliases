@@ -44,6 +44,8 @@ alias ll='ls -al'
 alias l='ls'
 # /etc/bash.bashrc
 
+alias wol='wakeonlan'
+
 # === Script ===
 alias rby='ruby'
 alias cfe='coffee'
