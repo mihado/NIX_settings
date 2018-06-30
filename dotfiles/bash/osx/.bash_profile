@@ -37,7 +37,7 @@ export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 # added by Miniconda3 installer
-export PATH="/Users/mihado/miniconda3/bin:$PATH"
+export PATH="/usr/local/miniconda3/bin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
