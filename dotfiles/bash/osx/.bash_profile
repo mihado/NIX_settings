@@ -22,8 +22,8 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/imagemagick@6/lib/pkgconfig"
-export PATH="/usr/local/opt/elasticsearch@1.7/bin:$PATH"
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 
 # cuda
@@ -37,7 +37,7 @@ export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 # added by Miniconda3 installer
-export PATH="/Users/mihado/miniconda3/bin:$PATH"
+export PATH="/usr/local/miniconda3/bin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
