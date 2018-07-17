@@ -30,7 +30,6 @@ elif [[ $platform == 'darwin' ]]; then
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
-alias psg='ps auxw | grep '
 alias bash-refresh='. ~/.bash_profile'
 
 # linux, put in /etc/bash.bashrc
@@ -48,7 +47,6 @@ alias wol='wakeonlan'
 
 # === Script ===
 alias rby='ruby'
-alias cfe='coffee'
 alias py='python'
 
 # === GIT ===
@@ -56,70 +54,35 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gl='git log'
 alias gl1='git log --oneline --decorate'
-alias gf='git fetch'
 alias gst='git status -sb'
-alias gstl='git status'
+alias gstt='git status'
 alias ga='git add --ignore-removal'
-alias gaa='git add --all'
 alias grh='git reset HEAD'
-alias gc='git commit'
 alias gcmm='git commit -m'
-alias gca='git commit -a'
 alias gph='git push'
 alias gpl='git pull'
 alias gb='git branch'
 alias gbr='git branch --remote'
 alias gco='git checkout'
 alias gcm='git checkout master'
+alias gcu='git checkout uat'
 alias gcp='git checkout production'
 alias gto='git checkout -' # switch between two current branches
 
-# === GEMS ===
-alias ccb='cucumber'
-alias rsp='rspec'
-alias shotgun47='shotgun --port=4567'
-
 # === RAILS ===
-alias rn='rails new'
+alias rc='rails console'
 alias rcb='rails console --sandbox'
 alias rct='RAILS_ENV=test rails console'
-alias rc='rails console'
-alias rg='rails generate'
-alias rd='rails destroy'
-
 alias rs='rails server -b 0.0.0.0'
-alias rs31='rails server -b 0.0.0.0 --port=3001'
-alias rs32='rails server -b 0.0.0.0 --port=3002'
-alias rs33='rails server -b 0.0.0.0 --port=3003'
-alias rs34='rails server -b 0.0.0.0 --port=3004'
-alias rs35='rails server -b 0.0.0.0 --port=3005'
-
-alias r2s='script/server'
-alias r2c='script/console'
 
 alias bx='bundle exec'
 alias bxan='bundle exec annotate'
 alias bxr='bundle exec rspec'
-alias bxc='bundle exec cucumber'
 
 # === RAKE ===
-alias rails-reset-devdb='bundle exec rake db:drop; bundle exec rake db:create; bundle exec rake db:migrate; bundle exec rake db:seed'
-alias rails-reset-testdb='bundle exec rake db:drop RAILS_ENV=test; bundle exec rake db:create RAILS_ENV=test; bundle exec rake db:migrate RAILS_ENV=test; bundle exec rake db:seed RAILS_ENV=test'
-alias rrt='rake routes'
+alias rails-reset-devdb='bundle exec rake db:drop db:create db:migrate'
+alias rails-reset-testdb='RAILS_ENV=test bundle exec rake db:drop db:create db:migrate'
 alias rrgrep='rake routes | grep '
-alias rdstt='rake db:migrate:status'
-
-alias bxdl='bundle exec rake db:schema:load; bundle exec rake db:schema:load RAILS_ENV=test'
-alias bxdm='bundle exec rake db:migrate; bundle exec rake db:migrate RAILS_ENV=test'
-alias bxdre='bundle exec rake db:migrate:redo; bundle exec rake db:migrate:redo RAILS_ENV=test'
-alias bxddr='bundle exec rake db:drop; bundle exec rake db:drop RAILS_ENV=test'
-alias bxdrb='bundle exec rake db:rollback'
-
-# === EMBER ===
-alias eg='ember generate'
-
-# === GRUNT ===
-alias grtw='grunt watch'
 
 # === RBENV ===
 alias rbh='rbenv rehash'
