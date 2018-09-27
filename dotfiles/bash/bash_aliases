@@ -80,8 +80,8 @@ alias bxan='bundle exec annotate'
 alias bxr='bundle exec rspec'
 
 # === RAKE ===
-alias rails-reset-devdb='bundle exec rake db:drop db:create db:migrate'
-alias rails-reset-testdb='RAILS_ENV=test bundle exec rake db:drop db:create db:migrate'
+alias rake-reset-devdb='RACK_ENV=development RAILS_ENV=development bundle exec rake db:drop db:create db:migrate'
+alias rake-reset-testdb='RACK_ENV=test RAILS_ENV=test bundle exec rake db:drop db:create db:migrate'
 alias rrgrep='rake routes | grep '
 
 # === RBENV ===
