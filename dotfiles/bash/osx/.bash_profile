@@ -32,12 +32,15 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib${DYLD_LIBRARY_PATH:+:${D
 # cuDNN
 export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
 
+# added by Miniconda3 installer
+export PATH="/usr/local/miniconda3/bin:$PATH"
+
 # http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
 # use git installed by homebrew
 export PATH="/usr/local/bin:/usr/bin:$PATH"
 
-# added by Miniconda3 installer
-export PATH="/usr/local/miniconda3/bin:$PATH"
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
