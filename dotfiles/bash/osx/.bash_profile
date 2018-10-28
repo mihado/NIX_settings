@@ -12,9 +12,8 @@ fi
 # export GNUTERM=x11
 
 # Android SDK - NDK
-export ANDROID_NDK=/usr/local/opt/android-ndk
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
+export ANDROID_HOME=/usr/local/share/android-sdk
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 export ANDROID_DEFAULT_BUILD_TOOLS=26.0.0
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$ANDROID_DEFAULT_BUILD_TOOLS"
 
