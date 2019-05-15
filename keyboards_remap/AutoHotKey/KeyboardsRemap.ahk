@@ -6,6 +6,10 @@ return
 Send, ^{Space}
 return
 
+<!p::
+Send, ^p
+return
+
 <!+p::
 Send, ^+p
 return
