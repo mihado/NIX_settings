@@ -5,10 +5,6 @@
 Send, ^{Enter}
 return
 
-<!Space::
-Send, ^{Space}
-return
-
 <!p::
 Send, ^p
 return
@@ -45,6 +41,11 @@ return
 ; select all
 <!a::
 Send, ^a
+return
+
+; select similar (editor)
+<!+d::
+Send, ^d
 return
 
 ; copy
