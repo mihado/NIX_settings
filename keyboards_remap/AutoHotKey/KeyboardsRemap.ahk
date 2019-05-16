@@ -1,3 +1,6 @@
+; #MenuMaskKey LAlt
+~LAlt::Send {Blind}{vk07}
+
 <!Enter::
 Send, ^{Enter}
 return
