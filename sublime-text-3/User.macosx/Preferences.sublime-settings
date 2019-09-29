@@ -20,6 +20,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Python",
 		"SublimeCodeIntel",
 		"Vintage"
 	],
@@ -29,6 +30,7 @@
 		"draw_active"
 	],
 	"line_padding_top": 1,
+	"material_theme_accent_lime": true,
 	"material_theme_arrow_folders": true,
 	"material_theme_big_fileicons": true,
 	"material_theme_bright_scrollbars": true,
