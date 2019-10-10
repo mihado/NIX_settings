@@ -1,3 +1,5 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 source ~/.bashrc
 source ~/.bash_aliases
 [[ -s ~/.paths ]] && source ~/.paths
