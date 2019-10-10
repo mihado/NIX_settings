@@ -1,3 +1,5 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 source ~/.bashrc
 source ~/.bash_aliases
 [[ -s ~/.paths ]] && source ~/.paths
@@ -12,9 +14,8 @@ fi
 # export GNUTERM=x11
 
 # Android SDK - NDK
-export ANDROID_NDK=/usr/local/opt/android-ndk
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
+export ANDROID_HOME=/usr/local/share/android-sdk
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 export ANDROID_DEFAULT_BUILD_TOOLS=26.0.0
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$ANDROID_DEFAULT_BUILD_TOOLS"
 
@@ -42,18 +43,7 @@ export PATH="/usr/local/bin:/usr/bin:$PATH"
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # homebrew asdf
 source /usr/local/opt/asdf/asdf.sh
-
-# rbenv
-eval "$(rbenv init -)"
 
 eval "$(direnv hook bash)"
