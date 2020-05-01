@@ -1,11 +1,11 @@
 [
-	{ "keys": ["alt+shift+w"], "command": "compile_and_display", "args": { "opt": "-p" } },
+  { "keys": ["ctrl+shift+w"], "command": "close_window" },
+  { "keys": ["alt+shift+w"], "command": "compile_and_display", "args": { "opt": "-p" } },
+  { "keys": ["ctrl+shift+super+c"], "command": "rubocop_check_single_file" },
   { "keys": ["command+shift+;"], "command": "table_cleaner" },
   { "keys": ["alt+shift+;"], "command": "table_import" },
   { "keys": ["command+;"], "command": "alignment" },
   { "keys": ["command+'"], "command": "reindent" , "args": {"single_line": false} },
-  { "keys": ["ctrl+shift+w"], "command": "close_window" },
-  { "keys": ["command+y"], "command": "redo" },
   { "keys": ["command+ctrl+shift+s"], "command": "trimmer" },
-  { "keys": ["ctrl+shift+super+c"], "command": "rubocop_check_single_file" }
+  { "keys": ["ctrl+shift+j"], "command": "pretty_json"}
 ]
