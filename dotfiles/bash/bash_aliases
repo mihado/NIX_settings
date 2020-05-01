@@ -84,6 +84,7 @@ alias bxc='bundle exec rubocop'
 # === RAKE ===
 alias rake-reset-devdb='RACK_ENV=development RAILS_ENV=development bundle exec rake db:drop db:create db:migrate'
 alias rake-reset-testdb='RACK_ENV=test RAILS_ENV=test bundle exec rake db:drop db:create db:migrate'
+alias rake-prepare-testdb='RACK_ENV=test RAILS_ENV=test bundle exec rake db:test:prepare'
 alias rrgrep='rake routes | grep '
 
 # === React Native ===
