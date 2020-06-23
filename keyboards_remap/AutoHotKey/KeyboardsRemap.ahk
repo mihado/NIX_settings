@@ -1,190 +1,269 @@
-; #MenuMaskKey LAlt
-~LAlt::Send {Blind}{vk07}
+#NoEnv
+SendMode Input
 
-<!Enter::
-Send, ^{Enter}
-return
+; ! = Alt
+; ^ = Ctrl
+; + = Shift
+; # = Win
+
+; #MenuMaskKey LAlt
+~LAlt::Send {Blind}{vkE8}
+
+; LCtrl q close
+<^q::WinClose A
+
+; RAlt m minimize
+>!m::WinMinimize A
+
+
+
+<!1::
+  Send ^{1}
+  Return
+
+<!+1::
+  Send ^+{1}
+  Return
+
+<!2::
+  Send ^{2}
+  Return
+
+<!+2::
+  Send ^+{2}
+  Return
+
+<!3::
+  Send ^{3}
+  Return
+
+<!4::
+  Send ^{4}
+  Return
+
+<!5::
+  Send ^{5}
+  Return
+
+
 
 <!p::
-Send, ^p
-return
+  Send ^p
+  Return
 
 <!+p::
-Send, ^+p
-return
+  Send ^+p
+  Return
 
 ; new tab
 <!t::
-Send, ^t
-return
+  Send ^t
+  Return
 
 ; reload
 <!r::
-Send, ^r
-return
+  Send ^r
+  Return
 
 ; find
 <!f::
-Send, ^f
-return
+  Send ^f
+  Return
 
 ; shift find
 <!+f::
-Send, ^+f
-return
-
-; comment
-<!/::
-Send, ^/
-return
+  Send ^+f
+  Return
 
 ; select all
 <!a::
-Send, ^a
-return
-
-; select similar (editor)
-<!+d::
-Send, ^d
-return
+  Send ^a
+  Return
 
 ; copy
 <!c::
-Send, ^c
-return
+  Send ^c
+  Return
 
 ; cut
 <!x::
-Send, ^x
-return
+  Send ^x
+  Return
 
 ; paste
 <!v::
-Send, ^v
-return
+  Send ^v
+  Return
 
 ; save
 <!s::
-Send, ^s
-return
+  Send ^s
+  Return
 
 ; undo
 <!z::
-Send, ^z
-return
+  Send ^z
+  Return
 
 ; redo
 <!+z::
-Send, ^+z
-return
+  Send ^+z
+  Return
 
 ; close
 <!w::
-Send, ^w
-return
+  Send ^w
+  Return
 
 ; delete
 <!d::
-Send, {Delete}
-return
+  Send {Delete}
+  Return
 
 ; backspace
 <!BS::
-Send, ^{BS}
-return
+  Send ^{BS}
+  Return
+
+
+
+; NAVIGATION ^
 
 ; home
 <!n::
-Send, {Home}
-return
+  Send {Home}
+  Return
 
 ; home select
 <!+n::
-Send, +{Home}
-return
+  Send +{Home}
+  Return
 
 ; end
 <!m::
-Send, {End}
-return
+  Send {End}
+  Return
 
 ; end select
 <!+m::
-Send, +{End}
-return
-
-; page up
-<!u::
-Send, {PgUp}
-return
-
-; page up control
-<!+u::
-Send, ^{PgUp}
-return
-
-; page down
-<!o::
-Send, {PgDn}
-return
-
-; page down control
-<!+o::
-Send, ^{PgDn}
-return
+  Send +{End}
+  Return
 
 ; left
 <!h::
-Send, {Left}
-return
+  Send {Left}
+  Return
 
 ^<!h::
-Send, ^{Left}
-return
+  Send ^{Left}
+  Return
 
 ; left select
 <!+h::
-Send, +{Left}
-return
+  Send +{Left}
+  Return
 
 ^<!+h::
-Send, ^+{Left}
-return
+  Send ^+{Left}
+  Return
 
-; right
+; down
 <!j::
-Send, {Down}
-return
+  Send {Down}
+  Return
 
-; right select
+; down select
 <!+j::
-Send, +{Down}
-return
+  Send +{Down}
+  Return
 
 ; up
 <!k::
-Send, {Up}
-return
+  Send {Up}
+  Return
 
 ; up select
 <!+k::
-Send, +{Up}
-return
+  Send +{Up}
+  Return
 
 ; right
 <!l::
-Send, {Right}
-return
+  Send {Right}
+  Return
 
 ^<!l::
-Send, ^{Right}
-return
+  Send ^{Right}
+  Return
 
 ; right select
 <!+l::
-Send, +{Right}
-return
+  Send +{Right}
+  Return
 
 ^<!+l::
-Send, ^+{Right}
-return
+  Send ^+{Right}
+  Return
+
+; page up
+<!u::
+  Send {PgUp}
+  Return
+
+; control page up
+<!+u::
+  Send ^{PgUp}
+  Return
+
+; page down
+<!o::
+  Send {PgDn}
+  Return
+
+; control page down
+<!+o::
+  Send ^{PgDn}
+  Return
+
+; NAVIGATION $
+
+
+
+; EDITOR ^
+
+; comment
+<!/::
+  Send ^/
+  Return
+
+; select similar
+<!+d::
+  Send ^d
+  Return
+
+; enter to new line
+<!Enter::Send ^{Enter}
+
+; VSCode Explorer
+<!+e::Send ^+e
+
+; VSCode select similar in find
+#Enter::Send !{Enter}
+
+; EDITOR $
+
+
+
+; MISC ^
+
+; 1Password Firefox
+<!.::
+  Send ^.
+  Return
+
+; 1Password Chrome
+<!+x::
+  Send ^+x
+  Return
+
+; MISC $
