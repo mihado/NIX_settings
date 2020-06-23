@@ -1,3 +1,7 @@
+; Resources
+; https://www.autohotkey.com/docs/KeyList.htm
+; https://www.autohotkey.com/docs/Hotkeys.htm
+
 #NoEnv
 SendMode Input
 
