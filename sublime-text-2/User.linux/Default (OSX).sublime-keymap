@@ -1,6 +1,0 @@
-[
-	{ "keys": ["alt+shift+w"], "command": "compile_and_display", "args": { "opt": "-p" } },
-  { "keys": ["super+;"], "command": "table_cleaner" },
-  { "keys": ["alt+shift+;"], "command": "table_import" },
-	{ "keys": ["ctrl+shift+w"], "command": "close_window" }
-]

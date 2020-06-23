@@ -1,3 +1,5 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 source ~/.bashrc
 source ~/.bash_aliases
 [[ -s ~/.paths ]] && source ~/.paths
@@ -31,9 +33,6 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib${DYLD_LIBRARY_PATH:+:${D
 # cuDNN
 export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
 
-# added by Miniconda3 installer
-export PATH="/usr/local/miniconda3/bin:$PATH"
-
 # http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
 # use git installed by homebrew
 export PATH="/usr/local/bin:/usr/bin:$PATH"
@@ -44,4 +43,15 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 # homebrew asdf
 source /usr/local/opt/asdf/asdf.sh
 
-eval "$(direnv hook bash)"
+# ruby-build installs a non-Homebrew OpenSSL for each Ruby version installed and these are never upgraded.
+# RUBY_CONFIGURE_OPTS link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded)
+# Note: this may interfere with building old versions of Ruby (e.g <2.4) that use OpenSSL <1.1.
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+if [ -f `eval "$(direnv hook bash)"` ]; then
+  eval "$(direnv hook bash)"
+fi
+
+if [ -f `eval "$(pipenv --completion)"` ]; then
+  eval "$(pipenv --completion)"
+fi

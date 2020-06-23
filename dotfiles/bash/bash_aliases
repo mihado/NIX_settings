@@ -22,15 +22,10 @@ elif [[ $platform == 'darwin' ]]; then
 	alias ls='ls -CF'
 	alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 	alias updatedb='sudo /usr/libexec/locate.updatedb'
-
-	alias lload='launchctl load'
-	alias lunload='launchctl unload'
-	alias sulload='sudo launchctl load'
-	alias sulunload='sudo launchctl unload'
+	alias bash-refresh='. ~/.bash_profile'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
-alias bash-refresh='. ~/.bash_profile'
 
 # linux, put in /etc/bash.bashrc
 alias clr='clear'
@@ -48,6 +43,7 @@ alias wol='wakeonlan'
 # === Script ===
 alias rby='ruby'
 alias py='python'
+alias elx='elixir'
 
 # === GIT ===
 alias gd='git diff'
@@ -70,22 +66,21 @@ alias gcp='git checkout production'
 alias gto='git checkout -' # switch between two current branches
 
 # === RAILS ===
-alias rc='rails console'
-alias rcb='rails console --sandbox'
-alias rct='RAILS_ENV=test rails console'
-alias rs='rails server -b 0.0.0.0'
+alias rc='bundle exec rails console'
+alias rcb='bundle exec rails console --sandbox'
+alias rct='RAILS_ENV=test bundle exec rails console'
+alias rs='bundle exec rails server -b 0.0.0.0'
 
 alias bx='bundle exec'
 alias bxan='bundle exec annotate'
 alias bxr='bundle exec rspec'
+alias bxc='bundle exec rubocop'
 
 # === RAKE ===
 alias rake-reset-devdb='RACK_ENV=development RAILS_ENV=development bundle exec rake db:drop db:create db:migrate'
 alias rake-reset-testdb='RACK_ENV=test RAILS_ENV=test bundle exec rake db:drop db:create db:migrate'
+alias rake-prepare-testdb='RACK_ENV=test RAILS_ENV=test bundle exec rake db:test:prepare'
 alias rrgrep='rake routes | grep '
-
-# === RBENV ===
-alias rbh='rbenv rehash'
 
 # === React Native ===
 alias rem='adb shell input keyevent 82'

@@ -1,3 +1,0 @@
-[
-	{"keys": ["alt+shift+w"], "command": "compile_and_display", "args": {"opt": "-p"}}
-]
