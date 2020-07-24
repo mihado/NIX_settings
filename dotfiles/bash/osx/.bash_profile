@@ -21,10 +21,6 @@ export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOM
 
 export PATH="$HOME/.fastlane/bin:$PATH"
 
-export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
-export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/imagemagick@6/lib/pkgconfig"
-export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 
 # cuda
@@ -47,6 +43,13 @@ source /usr/local/opt/asdf/asdf.sh
 # RUBY_CONFIGURE_OPTS link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded)
 # Note: this may interfere with building old versions of Ruby (e.g <2.4) that use OpenSSL <1.1.
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+# https://github.com/asdf-vm/asdf-erlang#osx
+export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
+
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/openjdk/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 
 if [ -f `eval "$(direnv hook bash)"` ]; then
   eval "$(direnv hook bash)"
