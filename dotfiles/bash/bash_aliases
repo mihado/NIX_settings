@@ -22,15 +22,10 @@ elif [[ $platform == 'darwin' ]]; then
 	alias ls='ls -CF'
 	alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 	alias updatedb='sudo /usr/libexec/locate.updatedb'
-
-	alias lload='launchctl load'
-	alias lunload='launchctl unload'
-	alias sulload='sudo launchctl load'
-	alias sulunload='sudo launchctl unload'
+	alias bash-refresh='. ~/.bash_profile'
 fi
 
 alias cbag='cat ~/.bash_aliases | grep '
-alias bash-refresh='. ~/.bash_profile'
 
 # linux, put in /etc/bash.bashrc
 alias clr='clear'
