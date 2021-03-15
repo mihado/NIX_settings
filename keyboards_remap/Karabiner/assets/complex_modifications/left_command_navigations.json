@@ -2,6 +2,29 @@
   "title": "left_command navigations",
   "rules": [
     {
+      "description": "left_control+left_cmd+left -> control+left",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow",
+            "modifiers": [
+              "left_control"
+            ]
+          }]
+        }
+      ]
+    },
+    {
       "description": "left_cmd+hjkl -> arrow keys",
       "manipulators": [
         {

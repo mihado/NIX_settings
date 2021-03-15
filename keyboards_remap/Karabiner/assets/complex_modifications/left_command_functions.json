@@ -2,7 +2,7 @@
   "title": "left_command functions",
   "rules": [
     {
-      "description": "left_cmd+d delete forward",
+      "description": "left_cmd+d delete forward (original rebind to lef_cmd+left_shift)",
       "manipulators": [
         {
           "type": "basic",
